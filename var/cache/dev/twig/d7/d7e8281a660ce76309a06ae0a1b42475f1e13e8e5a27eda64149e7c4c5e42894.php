@@ -22,29 +22,29 @@ class __TwigTemplate_784a4f9e9e3a8a8cf03cb60e7b5d7f54af9288b3e8dd371269f98b5a218
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e66d32220de92f7d3c7043adc5b3ee191397817d4b0260e346bbeb7924120627 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e66d32220de92f7d3c7043adc5b3ee191397817d4b0260e346bbeb7924120627->enter($__internal_e66d32220de92f7d3c7043adc5b3ee191397817d4b0260e346bbeb7924120627_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/add.html.twig"));
+        $__internal_04ce91015ad2c44584426e72f5322d44900bb694fd33f5391ad982c1e1bb9742 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_04ce91015ad2c44584426e72f5322d44900bb694fd33f5391ad982c1e1bb9742->enter($__internal_04ce91015ad2c44584426e72f5322d44900bb694fd33f5391ad982c1e1bb9742_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/add.html.twig"));
 
-        $__internal_774a94a3dc620da3f4bf0e32590fd589f8736f46f93ae640a4ebe4343d86969e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_774a94a3dc620da3f4bf0e32590fd589f8736f46f93ae640a4ebe4343d86969e->enter($__internal_774a94a3dc620da3f4bf0e32590fd589f8736f46f93ae640a4ebe4343d86969e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/add.html.twig"));
+        $__internal_74bf7c3444f1cd91fefc69703407b7def4b21bf401744c75bcc07f6274e2a04b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_74bf7c3444f1cd91fefc69703407b7def4b21bf401744c75bcc07f6274e2a04b->enter($__internal_74bf7c3444f1cd91fefc69703407b7def4b21bf401744c75bcc07f6274e2a04b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/add.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e66d32220de92f7d3c7043adc5b3ee191397817d4b0260e346bbeb7924120627->leave($__internal_e66d32220de92f7d3c7043adc5b3ee191397817d4b0260e346bbeb7924120627_prof);
+        $__internal_04ce91015ad2c44584426e72f5322d44900bb694fd33f5391ad982c1e1bb9742->leave($__internal_04ce91015ad2c44584426e72f5322d44900bb694fd33f5391ad982c1e1bb9742_prof);
 
         
-        $__internal_774a94a3dc620da3f4bf0e32590fd589f8736f46f93ae640a4ebe4343d86969e->leave($__internal_774a94a3dc620da3f4bf0e32590fd589f8736f46f93ae640a4ebe4343d86969e_prof);
+        $__internal_74bf7c3444f1cd91fefc69703407b7def4b21bf401744c75bcc07f6274e2a04b->leave($__internal_74bf7c3444f1cd91fefc69703407b7def4b21bf401744c75bcc07f6274e2a04b_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_615354fb07335e12961e5f3bd9829fb7cdac2c2b5a90cd20a0cfce4042da1586 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_615354fb07335e12961e5f3bd9829fb7cdac2c2b5a90cd20a0cfce4042da1586->enter($__internal_615354fb07335e12961e5f3bd9829fb7cdac2c2b5a90cd20a0cfce4042da1586_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_738cd3ed7d7e32ea06c548b57933b1e2f35a8d05d28186e79a790c7735076b84 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_738cd3ed7d7e32ea06c548b57933b1e2f35a8d05d28186e79a790c7735076b84->enter($__internal_738cd3ed7d7e32ea06c548b57933b1e2f35a8d05d28186e79a790c7735076b84_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_482c6018f54756c71c40062e0d36276676fbc1044ce70cf982ee192b116cc664 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_482c6018f54756c71c40062e0d36276676fbc1044ce70cf982ee192b116cc664->enter($__internal_482c6018f54756c71c40062e0d36276676fbc1044ce70cf982ee192b116cc664_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_732082b118a215f4f0f7e3598e45d7b5cb3f4fa0eb9588639f3f86412cfc3411 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_732082b118a215f4f0f7e3598e45d7b5cb3f4fa0eb9588639f3f86412cfc3411->enter($__internal_732082b118a215f4f0f7e3598e45d7b5cb3f4fa0eb9588639f3f86412cfc3411_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -63,65 +63,148 @@ class __TwigTemplate_784a4f9e9e3a8a8cf03cb60e7b5d7f54af9288b3e8dd371269f98b5a218
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["form"] ?? $this->getContext($context, "form")), 'widget');
         echo "
         <input type=\"submit\" class=\"btn btn-primary\" value=\"Create\"/>
-        <a href=\"http://localhost/udev_symfony/web/app_dev.php/users\"><input type=\"button\" class=\"btn btn-defaut\" value=\"Back\"/></a>
+        <a href=\"http://localhost/udev_symfony/web/app_dev.php/users\"><input type=\"button\" class=\"btn btn-defaut\"
+                                                                             value=\"Back\"/></a>
 
         ";
-        // line 14
+        // line 15
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
 
     </div>
 ";
         
-        $__internal_482c6018f54756c71c40062e0d36276676fbc1044ce70cf982ee192b116cc664->leave($__internal_482c6018f54756c71c40062e0d36276676fbc1044ce70cf982ee192b116cc664_prof);
+        $__internal_732082b118a215f4f0f7e3598e45d7b5cb3f4fa0eb9588639f3f86412cfc3411->leave($__internal_732082b118a215f4f0f7e3598e45d7b5cb3f4fa0eb9588639f3f86412cfc3411_prof);
 
         
-        $__internal_615354fb07335e12961e5f3bd9829fb7cdac2c2b5a90cd20a0cfce4042da1586->leave($__internal_615354fb07335e12961e5f3bd9829fb7cdac2c2b5a90cd20a0cfce4042da1586_prof);
+        $__internal_738cd3ed7d7e32ea06c548b57933b1e2f35a8d05d28186e79a790c7735076b84->leave($__internal_738cd3ed7d7e32ea06c548b57933b1e2f35a8d05d28186e79a790c7735076b84_prof);
 
     }
 
-    // line 19
+    // line 20
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_fe74f5035a0ea4efb928f2d1d14380b97dd5fcbef6ba53d082cc2cee91de2221 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fe74f5035a0ea4efb928f2d1d14380b97dd5fcbef6ba53d082cc2cee91de2221->enter($__internal_fe74f5035a0ea4efb928f2d1d14380b97dd5fcbef6ba53d082cc2cee91de2221_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_a83007a5334e2ff17c0bcb28e753709e3095c0725850b2c0a73e91dc965beeeb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a83007a5334e2ff17c0bcb28e753709e3095c0725850b2c0a73e91dc965beeeb->enter($__internal_a83007a5334e2ff17c0bcb28e753709e3095c0725850b2c0a73e91dc965beeeb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_06624dca6d507c89dc808da31831dc3fe5a9e4c263e5c493464ee17c082bea07 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_06624dca6d507c89dc808da31831dc3fe5a9e4c263e5c493464ee17c082bea07->enter($__internal_06624dca6d507c89dc808da31831dc3fe5a9e4c263e5c493464ee17c082bea07_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_612c47fc4ca93a7e3fc96ecb0fa28df49a7e5a73e5a1f2be0e3f5e26e61e28d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_612c47fc4ca93a7e3fc96ecb0fa28df49a7e5a73e5a1f2be0e3f5e26e61e28d9->enter($__internal_612c47fc4ca93a7e3fc96ecb0fa28df49a7e5a73e5a1f2be0e3f5e26e61e28d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 20
+        // line 21
         echo "    <style>
-        body { background: #F5F5F5; font: 18px/1.5 sans-serif; }
-        h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
-        h1 { font-size: 36px; }
-        h2 { font-size: 21px; margin-bottom: 1em; }
-        p { margin: 0 0 1em 0; }
-        a { color: #0000F0; }
-        a:hover { text-decoration: none; }
-        code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }
-        #wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }
-        #container { padding: 2em; }
-        #welcome, #status { margin-bottom: 2em; }
-        #welcome h1 span { display: block; font-size: 75%; }
-        #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
-        #icon-book { display: none; }
+        body {
+            background: #F5F5F5;
+            font: 18px/1.5 sans-serif;
+        }
+
+        h1, h2 {
+            line-height: 1.2;
+            margin: 0 0 .5em;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin: 0 0 1em 0;
+        }
+
+        a {
+            color: #0000F0;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        code {
+            background: #F5F5F5;
+            max-width: 100px;
+            padding: 2px 6px;
+            word-wrap: break-word;
+        }
+
+        #wrapper {
+            background: #FFF;
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+        }
+
+        #container {
+            padding: 2em;
+        }
+
+        #welcome, #status {
+            margin-bottom: 2em;
+        }
+
+        #welcome h1 span {
+            display: block;
+            font-size: 75%;
+        }
+
+        #icon-status, #icon-book {
+            float: left;
+            height: 64px;
+            margin-right: 1em;
+            margin-top: -4px;
+            width: 64px;
+        }
+
+        #icon-book {
+            display: none;
+        }
 
         @media (min-width: 768px) {
-            #wrapper { width: 80%; margin: 2em auto; }
-            #icon-book { display: inline-block; }
-            #status a, #next a { display: block; }
+            #wrapper {
+                width: 80%;
+                margin: 2em auto;
+            }
 
-            @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-            @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-            .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
+            #icon-book {
+                display: inline-block;
+            }
+
+            #status a, #next a {
+                display: block;
+            }
+
+            @-webkit-keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .sf-toolbar {
+                opacity: 0;
+                -webkit-animation: fade-in 1s .2s forwards;
+                animation: fade-in 1s .2s forwards;
+            }
         }
     </style>
 ";
         
-        $__internal_06624dca6d507c89dc808da31831dc3fe5a9e4c263e5c493464ee17c082bea07->leave($__internal_06624dca6d507c89dc808da31831dc3fe5a9e4c263e5c493464ee17c082bea07_prof);
+        $__internal_612c47fc4ca93a7e3fc96ecb0fa28df49a7e5a73e5a1f2be0e3f5e26e61e28d9->leave($__internal_612c47fc4ca93a7e3fc96ecb0fa28df49a7e5a73e5a1f2be0e3f5e26e61e28d9_prof);
 
         
-        $__internal_fe74f5035a0ea4efb928f2d1d14380b97dd5fcbef6ba53d082cc2cee91de2221->leave($__internal_fe74f5035a0ea4efb928f2d1d14380b97dd5fcbef6ba53d082cc2cee91de2221_prof);
+        $__internal_a83007a5334e2ff17c0bcb28e753709e3095c0725850b2c0a73e91dc965beeeb->leave($__internal_a83007a5334e2ff17c0bcb28e753709e3095c0725850b2c0a73e91dc965beeeb_prof);
 
     }
 
@@ -137,7 +220,7 @@ class __TwigTemplate_784a4f9e9e3a8a8cf03cb60e7b5d7f54af9288b3e8dd371269f98b5a218
 
     public function getDebugInfo()
     {
-        return array (  93 => 20,  84 => 19,  70 => 14,  63 => 10,  59 => 9,  53 => 5,  50 => 4,  41 => 3,  11 => 1,);
+        return array (  94 => 21,  85 => 20,  71 => 15,  63 => 10,  59 => 9,  53 => 5,  50 => 4,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -161,7 +244,8 @@ class __TwigTemplate_784a4f9e9e3a8a8cf03cb60e7b5d7f54af9288b3e8dd371269f98b5a218
         {{ form_start(form) }}
         {{ form_widget(form) }}
         <input type=\"submit\" class=\"btn btn-primary\" value=\"Create\"/>
-        <a href=\"http://localhost/udev_symfony/web/app_dev.php/users\"><input type=\"button\" class=\"btn btn-defaut\" value=\"Back\"/></a>
+        <a href=\"http://localhost/udev_symfony/web/app_dev.php/users\"><input type=\"button\" class=\"btn btn-defaut\"
+                                                                             value=\"Back\"/></a>
 
         {{ form_end(form) }}
 
@@ -170,29 +254,111 @@ class __TwigTemplate_784a4f9e9e3a8a8cf03cb60e7b5d7f54af9288b3e8dd371269f98b5a218
 
 {% block stylesheets %}
     <style>
-        body { background: #F5F5F5; font: 18px/1.5 sans-serif; }
-        h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
-        h1 { font-size: 36px; }
-        h2 { font-size: 21px; margin-bottom: 1em; }
-        p { margin: 0 0 1em 0; }
-        a { color: #0000F0; }
-        a:hover { text-decoration: none; }
-        code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }
-        #wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }
-        #container { padding: 2em; }
-        #welcome, #status { margin-bottom: 2em; }
-        #welcome h1 span { display: block; font-size: 75%; }
-        #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
-        #icon-book { display: none; }
+        body {
+            background: #F5F5F5;
+            font: 18px/1.5 sans-serif;
+        }
+
+        h1, h2 {
+            line-height: 1.2;
+            margin: 0 0 .5em;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin: 0 0 1em 0;
+        }
+
+        a {
+            color: #0000F0;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        code {
+            background: #F5F5F5;
+            max-width: 100px;
+            padding: 2px 6px;
+            word-wrap: break-word;
+        }
+
+        #wrapper {
+            background: #FFF;
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+        }
+
+        #container {
+            padding: 2em;
+        }
+
+        #welcome, #status {
+            margin-bottom: 2em;
+        }
+
+        #welcome h1 span {
+            display: block;
+            font-size: 75%;
+        }
+
+        #icon-status, #icon-book {
+            float: left;
+            height: 64px;
+            margin-right: 1em;
+            margin-top: -4px;
+            width: 64px;
+        }
+
+        #icon-book {
+            display: none;
+        }
 
         @media (min-width: 768px) {
-            #wrapper { width: 80%; margin: 2em auto; }
-            #icon-book { display: inline-block; }
-            #status a, #next a { display: block; }
+            #wrapper {
+                width: 80%;
+                margin: 2em auto;
+            }
 
-            @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-            @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-            .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
+            #icon-book {
+                display: inline-block;
+            }
+
+            #status a, #next a {
+                display: block;
+            }
+
+            @-webkit-keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .sf-toolbar {
+                opacity: 0;
+                -webkit-animation: fade-in 1s .2s forwards;
+                animation: fade-in 1s .2s forwards;
+            }
         }
     </style>
 {% endblock %}

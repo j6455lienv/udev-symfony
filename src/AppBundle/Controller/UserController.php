@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\User;
+use AppBundle\Form\UserType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -56,7 +57,7 @@ class UserController extends Controller
     public function userAdd(Request $request)
     {
         $user = new User();
-        $form = $this->createForm('AppBundle\Form\UserType');
+        $form = $this->createForm(UserType::class,$user);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
@@ -80,30 +81,24 @@ class UserController extends Controller
     /**
      * @Route("/users/edit/{id}", name="edit")
      */
-    public function edit(Request $request)
+
+    public function edit(Request $request, $id)
     {
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
-        $user = $repository->findOneById($request->get('id'));
-
-
-        $form = $this->createForm('AppBundle\Form\UserType');
+        $user = $repository->findOneById($id);
+        $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()){
-            //dump($request->get('appbundle_user'));
-            //die();
-
+        if ($form->isSubmitted() && $form->isValid()) {
             $user = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
             return $this->redirectToRoute('userslist');
         }
-
-        //replace this example code with whatever you need
         return $this->render('users/edit.html.twig', [
-            'user' => $user,
+            'user' =>$user,
             'form' => $form->createView(),
         ]);
     }
@@ -142,6 +137,28 @@ class UserController extends Controller
 
         //replace this example code with whatever you need
         return $this->redirectToRoute('userslist');
+    }
+
+    /**
+     * @Route("/users/others/{id}", name="user_others")
+     */
+    public function otherUserWidgetAction(Request $request)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $repository = $entityManager->getRepository('AppBundle:User');
+
+        $queryBuilder = $repository->createQueryBuilder('u')
+            ->where ("u.id!= :id")
+            ->setParameters(['id'=>$request->get('id')])
+            ->setMaxResults(10);
+
+        $query = $queryBuilder->getQuery();
+        $users = $query->getResult();
+
+        //replace this example code with whatever you need
+        return $this->render('users/others.html.twig',[
+            'users'=>$users
+        ]);
     }
 
 

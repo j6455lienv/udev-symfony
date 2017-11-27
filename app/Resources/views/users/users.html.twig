@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {{ include('layout/mainMenu.html.twig', {'current' : 'userlist'}) }}
+
     <div id="wrapper">
         <h1>List Users</h1>
         <!-- affichage des select -->

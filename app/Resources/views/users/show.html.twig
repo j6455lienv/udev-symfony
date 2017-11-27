@@ -2,9 +2,10 @@
 
 {% block body %}
 
+<div class="show" style="display:flex; justify-content: center;">
+    <div id="wrapper">
     <h1>Show Users</h1>
 
-    <div id="wrapper">
         <div>
             <span>Id : </span><span>{{user.id}}</span>
         </div>
@@ -18,8 +19,12 @@
             <span>Date : </span><span>{{user.date|date("Y-m-d")}}</span>
         </div>
         <a href ="{{ path('edit', {'id' : user.id}) }}" class="btn btn-primary btn-xs">Edit</a>
+        <a href="http://localhost/udev_symfony/web/app_dev.php/users"><input type="button" class="btn btn-defaut" value="Back"/></a>
     </div>
-
+    <div id="wrapper">
+        {{ render(controller('AppBundle:User:otherUserWidget', {'id':user.id})) }}
+    </div>
+</div>
 {% endblock %}
 
 {% block stylesheets %}
@@ -38,7 +43,9 @@
         #welcome h1 span { display: block; font-size: 75%; }
         #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
         #icon-book { display: none; }
-
+        .show{
+            margin:3em 8em 0 10em;
+        }
         @media (min-width: 768px) {
             #wrapper { width: 80%; margin: 2em auto; }
             #icon-book { display: inline-block; }

@@ -143,6 +143,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'userdelete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userDelete',));
             }
 
+            // user_others
+            if (0 === strpos($pathinfo, '/users/others') && preg_match('#^/users/others/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_others')), array (  '_controller' => 'AppBundle\\Controller\\UserController::otherUserWidgetAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
