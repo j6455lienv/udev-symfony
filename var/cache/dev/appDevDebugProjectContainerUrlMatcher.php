@@ -103,6 +103,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // homepage-tp
+        if ('/articles' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleAction',  '_route' => 'homepage-tp',);
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {
@@ -112,19 +117,32 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
-        // userslist
-        if ('/users' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::userAction',  '_route' => 'userslist',);
-        }
+        if (0 === strpos($pathinfo, '/users')) {
+            // userslist
+            if ('/users' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAction',  '_route' => 'userslist',);
+            }
 
-        // usersadd
-        if ('/useradd' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::userAdd',  '_route' => 'usersadd',);
-        }
+            // useradd
+            if ('/users/add' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAdd',  '_route' => 'useradd',);
+            }
 
-        // homepage-tp
-        if ('/articles' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::articleAction',  '_route' => 'homepage-tp',);
+            // edit
+            if (0 === strpos($pathinfo, '/users/edit') && preg_match('#^/users/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'edit')), array (  '_controller' => 'AppBundle\\Controller\\UserController::edit',));
+            }
+
+            // usershow
+            if (0 === strpos($pathinfo, '/users/show') && preg_match('#^/users/show/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'usershow')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userShow',));
+            }
+
+            // userdelete
+            if (preg_match('#^/users/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'userdelete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userDelete',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
