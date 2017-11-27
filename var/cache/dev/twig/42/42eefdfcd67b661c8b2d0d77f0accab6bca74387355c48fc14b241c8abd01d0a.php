@@ -21,158 +21,57 @@ class __TwigTemplate_c12f1c8e427dafa37c304deaf8933f5490e0b276f70ac2796157b4e87ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7502128ea7018dab8e9847dfadc8263aabda0b27beff3194074ed95fb7bafc4b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7502128ea7018dab8e9847dfadc8263aabda0b27beff3194074ed95fb7bafc4b->enter($__internal_7502128ea7018dab8e9847dfadc8263aabda0b27beff3194074ed95fb7bafc4b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_03d571d593271e12e7b2868510f9c19abdad7c6cc8aea3bcba4c297f25ee120c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_03d571d593271e12e7b2868510f9c19abdad7c6cc8aea3bcba4c297f25ee120c->enter($__internal_03d571d593271e12e7b2868510f9c19abdad7c6cc8aea3bcba4c297f25ee120c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
-        $__internal_95af79f785202d98cd10cad7b8cd8aa0d21d1d67fde8a6c722b919c929c219c5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_95af79f785202d98cd10cad7b8cd8aa0d21d1d67fde8a6c722b919c929c219c5->enter($__internal_95af79f785202d98cd10cad7b8cd8aa0d21d1d67fde8a6c722b919c929c219c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_f222065f388b7e7edc4fa76dfc1ef91a07defe4e2e0e77cd820493cd0c472009 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f222065f388b7e7edc4fa76dfc1ef91a07defe4e2e0e77cd820493cd0c472009->enter($__internal_f222065f388b7e7edc4fa76dfc1ef91a07defe4e2e0e77cd820493cd0c472009_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7502128ea7018dab8e9847dfadc8263aabda0b27beff3194074ed95fb7bafc4b->leave($__internal_7502128ea7018dab8e9847dfadc8263aabda0b27beff3194074ed95fb7bafc4b_prof);
+        $__internal_03d571d593271e12e7b2868510f9c19abdad7c6cc8aea3bcba4c297f25ee120c->leave($__internal_03d571d593271e12e7b2868510f9c19abdad7c6cc8aea3bcba4c297f25ee120c_prof);
 
         
-        $__internal_95af79f785202d98cd10cad7b8cd8aa0d21d1d67fde8a6c722b919c929c219c5->leave($__internal_95af79f785202d98cd10cad7b8cd8aa0d21d1d67fde8a6c722b919c929c219c5_prof);
+        $__internal_f222065f388b7e7edc4fa76dfc1ef91a07defe4e2e0e77cd820493cd0c472009->leave($__internal_f222065f388b7e7edc4fa76dfc1ef91a07defe4e2e0e77cd820493cd0c472009_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_7786abe0932cd07b0ee10d4e11de6dd31607856900d6aaeb88c6e50a12e03763 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7786abe0932cd07b0ee10d4e11de6dd31607856900d6aaeb88c6e50a12e03763->enter($__internal_7786abe0932cd07b0ee10d4e11de6dd31607856900d6aaeb88c6e50a12e03763_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a8e824af4932edba4a10b2ca3a9a661f0d0b4fc2f34b1f286ec6a21ed105df70 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a8e824af4932edba4a10b2ca3a9a661f0d0b4fc2f34b1f286ec6a21ed105df70->enter($__internal_a8e824af4932edba4a10b2ca3a9a661f0d0b4fc2f34b1f286ec6a21ed105df70_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_220d1caea46836038d6a0a86c4681989648dafa1155d1eeb40e8753f3a59c5b8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_220d1caea46836038d6a0a86c4681989648dafa1155d1eeb40e8753f3a59c5b8->enter($__internal_220d1caea46836038d6a0a86c4681989648dafa1155d1eeb40e8753f3a59c5b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_69e4d2ff2c55b40af1886c1d7aec39dfd7764f84a70f0b8ac9ff97135a85f871 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_69e4d2ff2c55b40af1886c1d7aec39dfd7764f84a70f0b8ac9ff97135a85f871->enter($__internal_69e4d2ff2c55b40af1886c1d7aec39dfd7764f84a70f0b8ac9ff97135a85f871_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "    ";
+        echo "
+    <!-- ajout d'une feuille de style-->
+    <link href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/index.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+
+    ";
+        // line 7
         echo twig_include($this->env, $context, "layout/mainMenu.html.twig", array("current" => "homepage"));
         echo "
-    <div id=\"wrapper\">
-        <div id=\"container\">
-            <h1>TP-SYMFONY-Julien Venet</h1>
-            <img src=\"";
-        // line 7
+
+        <div class=\"container-fluid\">
+            <h1>HOME</h1>
+            <img id=\"img\" src=\"";
+        // line 11
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/img.jpg"), "html", null, true);
         echo "\">
 
         </div>
-    </div>
-    <style>
-        body {
-            background: #F5F5F5;
-            font: 18px/1.5 sans-serif;
-        }
-
-        h1, h2 {
-            line-height: 1.2;
-            margin: 0 0 .5em;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        h2 {
-            font-size: 21px;
-            margin-bottom: 1em;
-        }
-
-        p {
-            margin: 0 0 1em 0;
-        }
-
-        a {
-            color: #0000F0;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        code {
-            background: #F5F5F5;
-            max-width: 100px;
-            padding: 2px 6px;
-            word-wrap: break-word;
-        }
-
-        #wrapper {
-            background: #FFF;
-            margin: 1em auto;
-            max-width: 800px;
-            width: 95%;
-        }
-
-        #container {
-            padding: 2em;
-        }
-
-        #welcome, #status {
-            margin-bottom: 2em;
-        }
-
-        #welcome h1 span {
-            display: block;
-            font-size: 75%;
-        }
-
-        #icon-status, #icon-book {
-            float: left;
-            height: 64px;
-            margin-right: 1em;
-            margin-top: -4px;
-            width: 64px;
-        }
-
-        #icon-book {
-            display: none;
-        }
-
-        @media (min-width: 768px) {
-            #wrapper {
-                width: 80%;
-                margin: 2em auto;
-            }
-
-            #icon-book {
-                display: inline-block;
-            }
-
-            #status a, #next a {
-                display: block;
-            }
-
-            @-webkit-keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            .sf-toolbar {
-                opacity: 0;
-                -webkit-animation: fade-in 1s .2s forwards;
-                animation: fade-in 1s .2s forwards;
-            }
-        }
-    </style>
 ";
         
-        $__internal_220d1caea46836038d6a0a86c4681989648dafa1155d1eeb40e8753f3a59c5b8->leave($__internal_220d1caea46836038d6a0a86c4681989648dafa1155d1eeb40e8753f3a59c5b8_prof);
+        $__internal_69e4d2ff2c55b40af1886c1d7aec39dfd7764f84a70f0b8ac9ff97135a85f871->leave($__internal_69e4d2ff2c55b40af1886c1d7aec39dfd7764f84a70f0b8ac9ff97135a85f871_prof);
 
         
-        $__internal_7786abe0932cd07b0ee10d4e11de6dd31607856900d6aaeb88c6e50a12e03763->leave($__internal_7786abe0932cd07b0ee10d4e11de6dd31607856900d6aaeb88c6e50a12e03763_prof);
+        $__internal_a8e824af4932edba4a10b2ca3a9a661f0d0b4fc2f34b1f286ec6a21ed105df70->leave($__internal_a8e824af4932edba4a10b2ca3a9a661f0d0b4fc2f34b1f286ec6a21ed105df70_prof);
 
     }
 
@@ -188,7 +87,7 @@ class __TwigTemplate_c12f1c8e427dafa37c304deaf8933f5490e0b276f70ac2796157b4e87ca
 
     public function getDebugInfo()
     {
-        return array (  57 => 7,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  65 => 11,  58 => 7,  53 => 5,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -203,122 +102,17 @@ class __TwigTemplate_c12f1c8e427dafa37c304deaf8933f5490e0b276f70ac2796157b4e87ca
     {
         return new Twig_Source("{% extends 'base.html.twig' %}
 {% block body %}
+
+    <!-- ajout d'une feuille de style-->
+    <link href=\"{{ asset('css/index.css') }}\" rel=\"stylesheet\">
+
     {{ include('layout/mainMenu.html.twig', {'current' : 'homepage'}) }}
-    <div id=\"wrapper\">
-        <div id=\"container\">
-            <h1>TP-SYMFONY-Julien Venet</h1>
-            <img src=\"{{ asset('img/img.jpg') }}\">
+
+        <div class=\"container-fluid\">
+            <h1>HOME</h1>
+            <img id=\"img\" src=\"{{ asset('img/img.jpg') }}\">
 
         </div>
-    </div>
-    <style>
-        body {
-            background: #F5F5F5;
-            font: 18px/1.5 sans-serif;
-        }
-
-        h1, h2 {
-            line-height: 1.2;
-            margin: 0 0 .5em;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        h2 {
-            font-size: 21px;
-            margin-bottom: 1em;
-        }
-
-        p {
-            margin: 0 0 1em 0;
-        }
-
-        a {
-            color: #0000F0;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        code {
-            background: #F5F5F5;
-            max-width: 100px;
-            padding: 2px 6px;
-            word-wrap: break-word;
-        }
-
-        #wrapper {
-            background: #FFF;
-            margin: 1em auto;
-            max-width: 800px;
-            width: 95%;
-        }
-
-        #container {
-            padding: 2em;
-        }
-
-        #welcome, #status {
-            margin-bottom: 2em;
-        }
-
-        #welcome h1 span {
-            display: block;
-            font-size: 75%;
-        }
-
-        #icon-status, #icon-book {
-            float: left;
-            height: 64px;
-            margin-right: 1em;
-            margin-top: -4px;
-            width: 64px;
-        }
-
-        #icon-book {
-            display: none;
-        }
-
-        @media (min-width: 768px) {
-            #wrapper {
-                width: 80%;
-                margin: 2em auto;
-            }
-
-            #icon-book {
-                display: inline-block;
-            }
-
-            #status a, #next a {
-                display: block;
-            }
-
-            @-webkit-keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            .sf-toolbar {
-                opacity: 0;
-                -webkit-animation: fade-in 1s .2s forwards;
-                animation: fade-in 1s .2s forwards;
-            }
-        }
-    </style>
 {% endblock %}", "default/index.html.twig", "/var/www/html/udev_symfony/app/Resources/views/default/index.html.twig");
     }
 }

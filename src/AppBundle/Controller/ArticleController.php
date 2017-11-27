@@ -8,28 +8,25 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ArticleController extends Controller
 {
-
     /**
      *
-     * @Route("/articles", name="homepage-tp")
+     * @Route("/articles", name="articles")
      */
-// En gros c'est notre READ du CRUD pour ARTICLE (affichage du contenu de la table article)
+    //READ -> CRUD pour ARTICLE
     public function articleAction(Request $request)
     {
-// afficher elements de la base de données
+        // afficher elements de la base de données
         $entityManager = $this->getDoctrine()->getManager();
         $repositery = $entityManager->getRepository('AppBundle:Article');
-        $article1 = $repositery->find(1);
-        $article2 = $repositery->findOneBy(['id' => 1]);
-        $article3 = $repositery->findAll();
-        $articlesDesc = $repositery->findBy([], ['id' => 'desc']);
+        $articles = $repositery->findAll();
 
-// replace this example code with whatever you need
-// Ne surtout pas oublier de changer l’adresse
+        //autre requettes possible
+        //$article1 = $repositery->find(1);
+        //$article2 = $repositery->findOneBy(['id' => 1]);
+        //$articlesDesc = $repositery->findBy([], ['id' => 'desc']);
+
         return $this->render('articles/articles.html.twig', [
-// on balance dans la vue notre liste de users
-            'liste_article' => $articlesDesc,
-
+            'articles' => $articles,
         ]);
 
     }

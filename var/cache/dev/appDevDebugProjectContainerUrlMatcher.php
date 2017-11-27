@@ -103,9 +103,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // homepage-tp
+        // articles
         if ('/articles' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleAction',  '_route' => 'homepage-tp',);
+            return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleAction',  '_route' => 'articles',);
         }
 
         // homepage
@@ -118,29 +118,29 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         if (0 === strpos($pathinfo, '/users')) {
-            // userslist
+            // users
             if ('/users' === $pathinfo) {
-                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAction',  '_route' => 'userslist',);
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAction',  '_route' => 'users',);
             }
 
-            // useradd
+            // add
             if ('/users/add' === $pathinfo) {
-                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAdd',  '_route' => 'useradd',);
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::addAction',  '_route' => 'add',);
             }
 
             // edit
             if (0 === strpos($pathinfo, '/users/edit') && preg_match('#^/users/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'edit')), array (  '_controller' => 'AppBundle\\Controller\\UserController::edit',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'edit')), array (  '_controller' => 'AppBundle\\Controller\\UserController::editAction',));
             }
 
-            // usershow
+            // show
             if (0 === strpos($pathinfo, '/users/show') && preg_match('#^/users/show/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'usershow')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userShow',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'show')), array (  '_controller' => 'AppBundle\\Controller\\UserController::showAction',));
             }
 
-            // userdelete
+            // delete
             if (preg_match('#^/users/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'userdelete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userDelete',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'delete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::deleteAction',));
             }
 
             // user_others

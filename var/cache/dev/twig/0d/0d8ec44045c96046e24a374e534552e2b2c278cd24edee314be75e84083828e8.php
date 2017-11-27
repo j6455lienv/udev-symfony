@@ -15,11 +15,11 @@ class __TwigTemplate_f032a620565c34303fc2de86c931cdf88f2ed57a36dd0dfd35cb9f6c79f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ea58a7d78e4e3c878221f2398636ea77203067bca248a4a21ce47f58adee56f6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ea58a7d78e4e3c878221f2398636ea77203067bca248a4a21ce47f58adee56f6->enter($__internal_ea58a7d78e4e3c878221f2398636ea77203067bca248a4a21ce47f58adee56f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/mainMenu.html.twig"));
+        $__internal_f9d813659e44926572876ce5061c7aaa81bb82d9b6677186f973d68df4a41ac2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f9d813659e44926572876ce5061c7aaa81bb82d9b6677186f973d68df4a41ac2->enter($__internal_f9d813659e44926572876ce5061c7aaa81bb82d9b6677186f973d68df4a41ac2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/mainMenu.html.twig"));
 
-        $__internal_dfb1f20ada7d6511a9f4271d0d1e7751411fbf7ff797fd37e2fd5583049a4730 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dfb1f20ada7d6511a9f4271d0d1e7751411fbf7ff797fd37e2fd5583049a4730->enter($__internal_dfb1f20ada7d6511a9f4271d0d1e7751411fbf7ff797fd37e2fd5583049a4730_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/mainMenu.html.twig"));
+        $__internal_eb7d905c122c9230539d8e9790fc96b1183bcc873dd0178c2f755d5196ec76b6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_eb7d905c122c9230539d8e9790fc96b1183bcc873dd0178c2f755d5196ec76b6->enter($__internal_eb7d905c122c9230539d8e9790fc96b1183bcc873dd0178c2f755d5196ec76b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/mainMenu.html.twig"));
 
         // line 1
         echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
@@ -30,9 +30,14 @@ class __TwigTemplate_f032a620565c34303fc2de86c931cdf88f2ed57a36dd0dfd35cb9f6c79f
     </button>
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
-            <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"/udev_symfony/web/app_dev.php/users\">Users<span
-                            class=\"sr-only\">(current)</span></a>
+            <!-- list deroulante des users-->
+            <li class=\"nav-item dropdown\">
+                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"
+                   aria-haspopup=\"true\" aria-expanded=\"false\">Users</a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users\">List</a>
+                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users/add\">Add</a>
+                </div>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/udev_symfony/web/app_dev.php/articles\">Articles</a>
@@ -41,10 +46,10 @@ class __TwigTemplate_f032a620565c34303fc2de86c931cdf88f2ed57a36dd0dfd35cb9f6c79f
     </div>
 </nav>";
         
-        $__internal_ea58a7d78e4e3c878221f2398636ea77203067bca248a4a21ce47f58adee56f6->leave($__internal_ea58a7d78e4e3c878221f2398636ea77203067bca248a4a21ce47f58adee56f6_prof);
+        $__internal_f9d813659e44926572876ce5061c7aaa81bb82d9b6677186f973d68df4a41ac2->leave($__internal_f9d813659e44926572876ce5061c7aaa81bb82d9b6677186f973d68df4a41ac2_prof);
 
         
-        $__internal_dfb1f20ada7d6511a9f4271d0d1e7751411fbf7ff797fd37e2fd5583049a4730->leave($__internal_dfb1f20ada7d6511a9f4271d0d1e7751411fbf7ff797fd37e2fd5583049a4730_prof);
+        $__internal_eb7d905c122c9230539d8e9790fc96b1183bcc873dd0178c2f755d5196ec76b6->leave($__internal_eb7d905c122c9230539d8e9790fc96b1183bcc873dd0178c2f755d5196ec76b6_prof);
 
     }
 
@@ -76,9 +81,14 @@ class __TwigTemplate_f032a620565c34303fc2de86c931cdf88f2ed57a36dd0dfd35cb9f6c79f
     </button>
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
-            <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"/udev_symfony/web/app_dev.php/users\">Users<span
-                            class=\"sr-only\">(current)</span></a>
+            <!-- list deroulante des users-->
+            <li class=\"nav-item dropdown\">
+                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"
+                   aria-haspopup=\"true\" aria-expanded=\"false\">Users</a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users\">List</a>
+                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users/add\">Add</a>
+                </div>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/udev_symfony/web/app_dev.php/articles\">Articles</a>

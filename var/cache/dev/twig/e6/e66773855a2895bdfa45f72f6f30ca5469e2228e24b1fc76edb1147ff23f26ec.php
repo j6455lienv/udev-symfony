@@ -15,11 +15,11 @@ class __TwigTemplate_050f5c79798ce43784535c66fa9c28d60b33956935b1ea7aea3fdc30341
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6f205597598e067c58abd0e8d153793a9a2571a2701142a9cd4ec088757fa034 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6f205597598e067c58abd0e8d153793a9a2571a2701142a9cd4ec088757fa034->enter($__internal_6f205597598e067c58abd0e8d153793a9a2571a2701142a9cd4ec088757fa034_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
+        $__internal_5ebaac10bc21044e874d5c170962e6f5b0c8d2c8e60511426ec9a84a274ca68a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_5ebaac10bc21044e874d5c170962e6f5b0c8d2c8e60511426ec9a84a274ca68a->enter($__internal_5ebaac10bc21044e874d5c170962e6f5b0c8d2c8e60511426ec9a84a274ca68a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
 
-        $__internal_b737617877899278d810b279f21493d729623e213b7e81a87152cb5f7b380d33 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b737617877899278d810b279f21493d729623e213b7e81a87152cb5f7b380d33->enter($__internal_b737617877899278d810b279f21493d729623e213b7e81a87152cb5f7b380d33_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
+        $__internal_114ad284a123eb7125a6e5036a67bcc2266497b66107e07bf01359974fe4b9c9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_114ad284a123eb7125a6e5036a67bcc2266497b66107e07bf01359974fe4b9c9->enter($__internal_114ad284a123eb7125a6e5036a67bcc2266497b66107e07bf01359974fe4b9c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
 
         // line 1
         echo "<div class=\"col-md-3\">
@@ -33,7 +33,7 @@ class __TwigTemplate_050f5c79798ce43784535c66fa9c28d60b33956935b1ea7aea3fdc30341
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
             // line 6
             echo "            <li><a href=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("usershow", array("id" => $this->getAttribute($context["user"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("show", array("id" => $this->getAttribute($context["user"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "username", array()), "html", null, true);
             echo "</a></li>
@@ -47,10 +47,10 @@ class __TwigTemplate_050f5c79798ce43784535c66fa9c28d60b33956935b1ea7aea3fdc30341
     </div>
 </div>";
         
-        $__internal_6f205597598e067c58abd0e8d153793a9a2571a2701142a9cd4ec088757fa034->leave($__internal_6f205597598e067c58abd0e8d153793a9a2571a2701142a9cd4ec088757fa034_prof);
+        $__internal_5ebaac10bc21044e874d5c170962e6f5b0c8d2c8e60511426ec9a84a274ca68a->leave($__internal_5ebaac10bc21044e874d5c170962e6f5b0c8d2c8e60511426ec9a84a274ca68a_prof);
 
         
-        $__internal_b737617877899278d810b279f21493d729623e213b7e81a87152cb5f7b380d33->leave($__internal_b737617877899278d810b279f21493d729623e213b7e81a87152cb5f7b380d33_prof);
+        $__internal_114ad284a123eb7125a6e5036a67bcc2266497b66107e07bf01359974fe4b9c9->leave($__internal_114ad284a123eb7125a6e5036a67bcc2266497b66107e07bf01359974fe4b9c9_prof);
 
     }
 
@@ -84,7 +84,7 @@ class __TwigTemplate_050f5c79798ce43784535c66fa9c28d60b33956935b1ea7aea3fdc30341
         <h4>Other Users</h4>
         <ol class=\"list-unstyled\">
             {% for user in users %}
-            <li><a href=\"{{ path('usershow', {'id':user.id}) }}\">{{ user.username }}</a></li>
+            <li><a href=\"{{ path('show', {'id':user.id}) }}\">{{ user.username }}</a></li>
             {% endfor %}
         </ol>
     </div>

@@ -11,117 +11,104 @@ use Symfony\Component\HttpFoundation\Request;
 class UserController extends Controller
 {
     /**
-     * @Route("/users", name="userslist")
+     * @Route("/users", name="users")
      */
     public function userAction(Request $request)
     {
-
-        $array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        $monolog = $this->get('logger');
-        $monolog->addNotice('Ceci est un message de log', ['tableau' => $array]);
-        $monolog->addCritical('Ceci est un message de critical de log', ['tableau' => $array]);
-
-
-        //on recupere l'objet
-        $translator = $this->get('translator');
-
-        $output = [
-            "message1" => $translator->trans('i18nNotice'),
-            "message2" => $translator->trans('secondMessage')
-        ];
-        //dump($output);
-        //die();
-
+        //creation d'un manager
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
 
-        $user1 = $repository->find(1);
-
+        //declaration de $users, on recupere toutes les entrees de la table user
         $users = $repository->findAll();
-        $usersDesc = $repository->findBy([], ['id' => 'desc']);
 
-        //replace this example code with whatever you need
+        //return, on donne a la vue correspondante les variable twig
         return $this->render('users/users.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
-            'tableau' => [1, 2, 3, 4],
-            'translation' => $output,
-            'user1' => $user1,
             'users' => $users,
-            'usersDesc' => $usersDesc
         ]);
     }
 
     /**
-     * @Route("/users/add", name="useradd")
+     * @Route("/users/add", name="add")
      */
-    public function userAdd(Request $request)
+    public function addAction(Request $request)
     {
+        //creation d'un user et creation du formulaire
         $user = new User();
         $form = $this->createForm(UserType::class,$user);
         $form->handleRequest($request);
 
+        //test sur le submit et data valid
         if($form->isSubmitted() && $form->isValid()){
-            //dump($request->get('appbundle_user'));
-            //die();
 
             $user = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
-            return $this->redirectToRoute('userslist');
+            return $this->redirectToRoute('users');
         }
 
-        //replace this example code with whatever you need
+        //return, on donne a la vue correspondante les variable twig
         return $this->render('users/add.html.twig', [
             'user' => $user,
             'form' => $form->createView(),
         ]);
     }
 
+    //on envoi l'id en GET dans le routage
     /**
      * @Route("/users/edit/{id}", name="edit")
      */
 
-    public function edit(Request $request, $id)
+    public function editAction(Request $request, $id)
     {
+        //recupération d'un user par sa cle primaire 'id'
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
+        //id user
         $user = $repository->findOneById($id);
+
+        //recupération du form par user
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
+        //test form valid
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
-            return $this->redirectToRoute('userslist');
+            return $this->redirectToRoute('users');
         }
+        //return, on donne a la vue correspondante les variable twig
         return $this->render('users/edit.html.twig', [
             'user' =>$user,
             'form' => $form->createView(),
         ]);
     }
 
+    //on envoi l'id en GET dans le routage
     /**
-     * @Route("/users/show/{id}", name="usershow")
+     * @Route("/users/show/{id}", name="show")
      */
-    public function userShow(Request $request)
+    public function showAction(Request $request, $id)
     {
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
+
+        //on peut aussi recupérer l'id par request, method get et id entre quotes !!
         $user = $repository->findOneById($request->get('id'));
 
         return $this->render('users/show.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
             'user' => $user
         ]);
     }
 
     /**
-     * @Route("/users/{id}", name="userdelete")
+     * @Route("/users/{id}", name="delete")
      */
-    public function userDelete(Request $request, $id)
+
+    public function deleteAction(Request $request, $id)
     {
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
@@ -135,13 +122,15 @@ class UserController extends Controller
         $entityManager->remove($user);
         $entityManager->flush();
 
-        //replace this example code with whatever you need
-        return $this->redirectToRoute('userslist');
+        //return, on donne a la vue correspondante les variable twig
+        return $this->redirectToRoute('users');
     }
 
     /**
      * @Route("/users/others/{id}", name="user_others")
      */
+
+    //moyen de recupérer une liste définie de user
     public function otherUserWidgetAction(Request $request)
     {
         $entityManager = $this->getDoctrine()->getManager();
@@ -155,13 +144,9 @@ class UserController extends Controller
         $query = $queryBuilder->getQuery();
         $users = $query->getResult();
 
-        //replace this example code with whatever you need
+        //return, on donne a la vue correspondante les variable twig
         return $this->render('users/others.html.twig',[
             'users'=>$users
         ]);
     }
-
-
-
-
 }

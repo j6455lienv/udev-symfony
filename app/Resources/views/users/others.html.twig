@@ -3,7 +3,7 @@
         <h4>Other Users</h4>
         <ol class="list-unstyled">
             {% for user in users %}
-            <li><a href="{{ path('usershow', {'id':user.id}) }}">{{ user.username }}</a></li>
+                <li><a href="{{ path('show', {'id':user.id}) }}">{{ user.username }}</a></li>
             {% endfor %}
         </ol>
     </div>
