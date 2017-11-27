@@ -9,7 +9,12 @@
             <table border="1px">
                 <ul>
                     {% for key, value in liste_article %}
-                        <tr><td>{{ value.id }}</td> <td> {{ value.subject}}</td> <td>  {{ value.date|date('Y-m-d')}} </td> <td>{{ value.body}} </td> </tr>
+                        <tr>
+                            <td>{{ value.id }}</td>
+                            <td> {{ value.subject}}</td>
+                            <td>  {{ value.date|date('Y-m-d')}} </td>
+                            <td>{{ value.body}} </td>
+                        </tr>
                     {% endfor %}
                 </ul>
             </table>
