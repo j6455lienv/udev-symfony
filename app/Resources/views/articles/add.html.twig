@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ include('layout/mainMenu.html.twig', {'current' : 'articles'}) }}
+    {% form_theme form 'bootstrap_3_layout.html.twig' %}
+    <div class="container">
+
+        <h1>Article Add (articles/add)</h1>
+
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" class="btn btn-primary" value="Create"/>
+        <a href="{{ path('articles') }}"><input type="button" class="btn btn-defaut"
+                                                value="Back"/></a>
+        {{ form_end(form) }}
+
+    </div>
+
+{% endblock %}

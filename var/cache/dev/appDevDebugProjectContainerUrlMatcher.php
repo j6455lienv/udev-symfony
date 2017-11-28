@@ -103,9 +103,42 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // articles
-        if ('/articles' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleAction',  '_route' => 'articles',);
+        elseif (0 === strpos($pathinfo, '/articles')) {
+            // articles
+            if ('/articles' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleAction',  '_route' => 'articles',);
+            }
+
+            // article_add
+            if ('/articles/add' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::addAction',  '_route' => 'article_add',);
+            }
+
+            // article_edit
+            if (0 === strpos($pathinfo, '/articles/edit') && preg_match('#^/articles/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_edit')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::editAction',));
+            }
+
+            // article_show
+            if (0 === strpos($pathinfo, '/articles/show') && preg_match('#^/articles/show/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_show')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::showAction',));
+            }
+
+            // article_delete
+            if (preg_match('#^/articles/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_delete')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::deleteAction',));
+            }
+
+            // article_others
+            if (0 === strpos($pathinfo, '/articles/others') && preg_match('#^/articles/others/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_others')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::otherUserWidgetAction',));
+            }
+
+            // article_widget
+            if (0 === strpos($pathinfo, '/articles/userWidget') && preg_match('#^/articles/userWidget/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_widget')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::userWidgetAction',));
+            }
+
         }
 
         // homepage
@@ -120,7 +153,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         if (0 === strpos($pathinfo, '/users')) {
             // users
             if ('/users' === $pathinfo) {
-                return array (  '_controller' => 'AppBundle\\Controller\\UserController::userAction',  '_route' => 'users',);
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::listAction',  '_route' => 'users',);
             }
 
             // add
@@ -148,6 +181,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_others')), array (  '_controller' => 'AppBundle\\Controller\\UserController::otherUserWidgetAction',));
             }
 
+            // user_widget
+            if (0 === strpos($pathinfo, '/users/userWidget') && preg_match('#^/users/userWidget/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_widget')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userWidgetAction',));
+            }
+
+        }
+
+        // flux_rss
+        if ('/rss/file' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\UserController::fluxRSSAction',  '_route' => 'flux_rss',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

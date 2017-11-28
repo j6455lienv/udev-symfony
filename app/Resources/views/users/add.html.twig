@@ -10,7 +10,7 @@
         {{ form_start(form) }}
         {{ form_widget(form) }}
         <input type="submit" class="btn btn-primary" value="Create"/>
-        <a href="http://localhost/udev_symfony/web/app_dev.php/users"><input type="button" class="btn btn-defaut"
+        <a href="{{ path('users') }}"><input type="button" class="btn btn-defaut"
                                                                              value="Back"/></a>
         {{ form_end(form) }}
 

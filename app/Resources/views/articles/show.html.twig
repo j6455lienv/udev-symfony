@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ include('layout/mainMenu.html.twig', {'current' : 'articles'}) }}
+
+    <div class="container" style="display:flex; justify-content: space-around;">
+
+        <div id="container">
+            <h1>Show Articles</h1>
+            <div>
+                <span>N° : </span><span>{{ article.id }}</span>
+            </div>
+            <div>
+                <span>Titre : </span><span>{{ article.subject }}</span>
+            </div>
+            <div>
+                <span>eMail : </span><span>{{ article.body }}</span>
+            </div>
+            <div>
+                <span>Date : </span><span>{{ article.date|date("Y-m-d") }}</span>
+            </div>
+            <a href="{{ path('article_edit', {'id' : article.id}) }}" class="btn btn-primary btn-xs">Edit</a>
+            <a href="{{ path('articles')}}"><input type="button" class="btn btn-defaut" value="Back"/></a>
+        </div>
+
+        <div id="container">
+            {{ render(controller('AppBundle:Article:otherUserWidget', {'id':article.id})) }}
+        </div>
+
+    </div>
+{% endblock %}

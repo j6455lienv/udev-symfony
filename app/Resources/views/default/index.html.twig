@@ -1,14 +1,35 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-
     <!-- ajout d'une feuille de style-->
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
-
     {{ include('layout/mainMenu.html.twig', {'current' : 'homepage'}) }}
 
+    <div class="container">
         <div class="container-fluid">
-            <h1>HOME</h1>
+            <h1>Homepage</h1>
             <img id="img" src="{{ asset('img/img.jpg') }}">
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h2>Gestion des utilisateurs</h2>
 
         </div>
+        <div class="alert alert-success" role="alert">
+            <h2>Gestion des articles</h2>
+
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h2>Utilisateurs créés aujourd'hui</h2>
+            {{ render_hinclude(controller('AppBundle:User:userWidget', {'defaut': 'Loading Other Users'})) }}
+
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h2>Articles créés aujourd'hui</h2>
+
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h2>Last posts @Symfony Blog</h2>
+            {{ render_hinclude(controller('AppBundle:User:fluxRSS', {'defaut': 'Loading Other Users'})) }}
+        </div>
+    </div>
+
 {% endblock %}

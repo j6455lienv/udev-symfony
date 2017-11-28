@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    {{ include('layout/mainMenu.html.twig', {'current' : 'users'}) }}
+    {{ include('layout/mainMenu.html.twig', {'current' : 'article'}) }}
 
     <div class="container">
         <h1>Articles</h1>
@@ -8,9 +8,10 @@
             <thead>
             <tr>
                 <th scope="col">N°</th>
-                <th scope="col">Titre</th>
-                <th scope="col">Description</th>
-                <th scope="col">Date de parution</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Body</th>
+                <th scope="col">Date</th>
+                <th scope="col">Update</th>
             </tr>
             </thead>
             <tbody>
@@ -20,11 +21,18 @@
                     <td>{{ value.subject }}</td>
                     <td>{{ value.body }}</td>
                     <td>{{ value.date|date("Y-m-d") }}</td>
-
+                    <td>
+                        <a href="{{ path('article_show', {'id' : value.id}) }}" class="btn btn-primary btn-xs">Show</a>
+                        <a href="{{ path('article_delete', {'id' : value.id}) }}" class="btn btn-primary btn-xs">Delete</a>
+                    </td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
+        <div class="container footer-button" style="display: flex">
+            <div class="container button"><a href="{{ path('article_add') }}" class="btn btn-primary btn-xs">Add</a></div>
+            <div class="container  button">{{ knp_pagination_render(articles) }}</div>
+        </div>
 
     </div>
 {% endblock %}

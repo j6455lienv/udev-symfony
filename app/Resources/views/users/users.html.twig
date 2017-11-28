@@ -2,6 +2,7 @@
 {% block body %}
     {{ include('layout/mainMenu.html.twig', {'current' : 'users'}) }}
 
+    <link href="{{ asset('css/users.css') }}" rel="stylesheet">
     <div class="container">
         <h1>User List</h1>
         <table class="table">
@@ -27,6 +28,9 @@
             {% endfor %}
             </tbody>
         </table>
-        <a href="{{ path('add') }}" class="btn btn-primary btn-xs">Add</a>
+        <div class="container footer-button">
+            <div class="container button"><a href="{{ path('add') }}" class="btn btn-primary btn-xs">Add</a></div>
+            <div class="container navigation button">{{ knp_pagination_render(users) }}</div>
+        </div>
     </div>
 {% endblock %}

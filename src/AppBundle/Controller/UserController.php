@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\User;
 use AppBundle\Form\UserType;
+use Faker\Provider\DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,18 +14,25 @@ class UserController extends Controller
     /**
      * @Route("/users", name="users")
      */
-    public function userAction(Request $request)
+    public function listAction(Request $request)
     {
-        //creation d'un manager
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:User');
 
-        //declaration de $users, on recupere toutes les entrees de la table user
-        $users = $repository->findAll();
+        $em = $this->get('doctrine.orm.entity_manager');
+        $dql = "SELECT a FROM AcmeMainBundle:Article a";
+        $query = $repository->findAll();
 
-        //return, on donne a la vue correspondante les variable twig
+        $paginator = $this->get('knp_paginator');
+        $users = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            4/*limit per page*/
+        );
+
+        // parameters to template
         return $this->render('users/users.html.twig', [
-            'users' => $users,
+            'users' => $users
         ]);
     }
 
@@ -35,11 +43,11 @@ class UserController extends Controller
     {
         //creation d'un user et creation du formulaire
         $user = new User();
-        $form = $this->createForm(UserType::class,$user);
+        $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
         //test sur le submit et data valid
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
 
             $user = $form->getData();
             $em = $this->getDoctrine()->getManager();
@@ -56,6 +64,7 @@ class UserController extends Controller
     }
 
     //on envoi l'id en GET dans le routage
+
     /**
      * @Route("/users/edit/{id}", name="edit")
      */
@@ -82,12 +91,13 @@ class UserController extends Controller
         }
         //return, on donne a la vue correspondante les variable twig
         return $this->render('users/edit.html.twig', [
-            'user' =>$user,
+            'user' => $user,
             'form' => $form->createView(),
         ]);
     }
 
     //on envoi l'id en GET dans le routage
+
     /**
      * @Route("/users/show/{id}", name="show")
      */
@@ -115,7 +125,7 @@ class UserController extends Controller
 
         $user = $repository->findOneById($id);
 
-        if(is_null($user)){
+        if (is_null($user)) {
             throw $this->createNotFoundException('No user found');
         }
 
@@ -137,16 +147,70 @@ class UserController extends Controller
         $repository = $entityManager->getRepository('AppBundle:User');
 
         $queryBuilder = $repository->createQueryBuilder('u')
-            ->where ("u.id!= :id")
-            ->setParameters(['id'=>$request->get('id')])
+            ->where("u.id!= :id")
+            ->setParameters(['id' => $request->get('id')])
             ->setMaxResults(10);
 
         $query = $queryBuilder->getQuery();
         $users = $query->getResult();
 
         //return, on donne a la vue correspondante les variable twig
-        return $this->render('users/others.html.twig',[
-            'users'=>$users
+        return $this->render('users/others.html.twig', [
+            'users' => $users
+        ]);
+    }
+
+    /**
+     * @Route("/users/userWidget/{id}", name="user_widget")
+     */
+
+    //moyen de recupérer une liste définie de user
+    public function userWidgetAction(Request $request)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $repository = $entityManager->getRepository('AppBundle:User');
+        $date = new \DateTime();
+
+        //requetes preparee
+        $queryBuilder = $repository->createQueryBuilder('u')
+            ->where("u.date = :date")
+            ->setParameters(['date' => $date->format('Y-m-d')])
+            ->setMaxResults(10);
+
+        $query = $queryBuilder->getQuery();
+        $users = $query->getResult();
+
+        //return, on donne a la vue correspondante les variable twig
+        return $this->render('users/userWidget.html.twig', [
+            'users' => $users
+        ]);
+    }
+
+    /**
+     * @Route("/rss/file", name="flux_rss")
+     */
+    //moyen de recupérer une liste définie de user
+    public function fluxRSSAction(Request $request)
+    {
+        // create a simple FeedIo instance
+        $feedIo = \FeedIo\Factory::create()->getFeedIo();
+        $url = 'https://forgetformation-recrute.talent-soft.com/handlers/offerRss.ashx?LCID=1036&Rss_Contract=2937';
+        // read a feed
+        $result = $feedIo->read($url);
+
+        // or read a feed since a certain date
+        $result = $feedIo->readSince($url, new \DateTime('-7 days'));
+
+        // get title
+        $feedTitle = $result->getFeed()->getTitle();
+
+        // iterate through items
+        foreach ($result->getFeed() as $item) {
+            echo $item->getTitle();
+        }
+        //return, on donne a la vue correspondante les variable twig
+        return $this->render('rss/file.html.twig', [
+            'result' => $result
         ]);
     }
 }

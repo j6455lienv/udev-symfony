@@ -111,6 +111,11 @@ $catalogue = new MessageCatalogue('fr', array (
     'i18nNotice' => 'message en FR',
     'secondMessage' => 'deuxieme message FR',
   ),
+  'KnpPaginatorBundle' => 
+  array (
+    'label_previous' => 'Précédent',
+    'label_next' => 'Suivant',
+  ),
 ));
 
 
