@@ -152,11 +152,11 @@ class UserController extends Controller
             ->setMaxResults(10);
 
         $query = $queryBuilder->getQuery();
-        $users = $query->getResult();
+        $user = $query->getResult();
 
         //return, on donne a la vue correspondante les variable twig
         return $this->render('users/others.html.twig', [
-            'users' => $users
+            'user' => $user
         ]);
     }
 
@@ -182,7 +182,7 @@ class UserController extends Controller
 
         //return, on donne a la vue correspondante les variable twig
         return $this->render('users/userWidget.html.twig', [
-            'users' => $users
+            'user' => $users
         ]);
     }
 

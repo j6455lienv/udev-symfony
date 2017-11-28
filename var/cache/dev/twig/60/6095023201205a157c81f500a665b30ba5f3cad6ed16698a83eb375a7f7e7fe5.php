@@ -1,6 +1,6 @@
 <?php
 
-/* users/others.html.twig */
+/* :users:others.html.twig */
 class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f823d506 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2e5af273bd89599d7d2c661695b745dc197380da72b8e565baf65a1e034af71a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2e5af273bd89599d7d2c661695b745dc197380da72b8e565baf65a1e034af71a->enter($__internal_2e5af273bd89599d7d2c661695b745dc197380da72b8e565baf65a1e034af71a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
+        $__internal_3db1f6a66c4c66baa20aabd90dd1fd7c86f938490fd45c9ec3e575989b5e17c6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3db1f6a66c4c66baa20aabd90dd1fd7c86f938490fd45c9ec3e575989b5e17c6->enter($__internal_3db1f6a66c4c66baa20aabd90dd1fd7c86f938490fd45c9ec3e575989b5e17c6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
 
-        $__internal_e87c0c94542b6389d97b52e34fb293ca2eb71ffacfafe0cb766d687efc33331d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e87c0c94542b6389d97b52e34fb293ca2eb71ffacfafe0cb766d687efc33331d->enter($__internal_e87c0c94542b6389d97b52e34fb293ca2eb71ffacfafe0cb766d687efc33331d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/others.html.twig"));
+        $__internal_0bf186efabaea8ab49afa3fac6356d43e17b7b8acfd778a69f8e618bbae294b6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0bf186efabaea8ab49afa3fac6356d43e17b7b8acfd778a69f8e618bbae294b6->enter($__internal_0bf186efabaea8ab49afa3fac6356d43e17b7b8acfd778a69f8e618bbae294b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
 
         // line 1
         echo "<div class=\"col-md-3\">
@@ -29,7 +29,7 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
             ";
         // line 5
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["users"] ?? $this->getContext($context, "users")));
+        $context['_seq'] = twig_ensure_traversable($context["user"]);
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
             // line 6
             echo "                <li><a href=\"";
@@ -47,16 +47,16 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
     </div>
 </div>";
         
-        $__internal_2e5af273bd89599d7d2c661695b745dc197380da72b8e565baf65a1e034af71a->leave($__internal_2e5af273bd89599d7d2c661695b745dc197380da72b8e565baf65a1e034af71a_prof);
+        $__internal_3db1f6a66c4c66baa20aabd90dd1fd7c86f938490fd45c9ec3e575989b5e17c6->leave($__internal_3db1f6a66c4c66baa20aabd90dd1fd7c86f938490fd45c9ec3e575989b5e17c6_prof);
 
         
-        $__internal_e87c0c94542b6389d97b52e34fb293ca2eb71ffacfafe0cb766d687efc33331d->leave($__internal_e87c0c94542b6389d97b52e34fb293ca2eb71ffacfafe0cb766d687efc33331d_prof);
+        $__internal_0bf186efabaea8ab49afa3fac6356d43e17b7b8acfd778a69f8e618bbae294b6->leave($__internal_0bf186efabaea8ab49afa3fac6356d43e17b7b8acfd778a69f8e618bbae294b6_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "users/others.html.twig";
+        return ":users:others.html.twig";
     }
 
     public function isTraitable()
@@ -83,11 +83,11 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
     <div class=\"sidebar-module well\">
         <h4>Other Users</h4>
         <ol class=\"list-unstyled\">
-            {% for user in users %}
+            {% for user in user %}
                 <li><a href=\"{{ path('show', {'id':user.id}) }}\">{{ user.username }}</a></li>
             {% endfor %}
         </ol>
     </div>
-</div>", "users/others.html.twig", "/var/www/html/udev_symfony/app/Resources/views/users/others.html.twig");
+</div>", ":users:others.html.twig", "/var/www/html/udev_symfony/app/Resources/views/users/others.html.twig");
     }
 }

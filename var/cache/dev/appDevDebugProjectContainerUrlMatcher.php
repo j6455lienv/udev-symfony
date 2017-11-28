@@ -131,12 +131,12 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             // article_others
             if (0 === strpos($pathinfo, '/articles/others') && preg_match('#^/articles/others/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_others')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::otherUserWidgetAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_others')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::otherArticleWidgetAction',));
             }
 
             // article_widget
             if (0 === strpos($pathinfo, '/articles/userWidget') && preg_match('#^/articles/userWidget/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_widget')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::userWidgetAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_widget')), array (  '_controller' => 'AppBundle\\Controller\\ArticleController::articleWidgetAction',));
             }
 
         }

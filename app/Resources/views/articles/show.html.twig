@@ -11,10 +11,10 @@
                 <span>N° : </span><span>{{ article.id }}</span>
             </div>
             <div>
-                <span>Titre : </span><span>{{ article.subject }}</span>
+                <span>Subject : </span><span>{{ article.subject }}</span>
             </div>
             <div>
-                <span>eMail : </span><span>{{ article.body }}</span>
+                <span>Body : </span><span>{{ article.body }}</span>
             </div>
             <div>
                 <span>Date : </span><span>{{ article.date|date("Y-m-d") }}</span>
@@ -24,7 +24,7 @@
         </div>
 
         <div id="container">
-            {{ render(controller('AppBundle:Article:otherUserWidget', {'id':article.id})) }}
+            {{ render(controller('AppBundle:Article:otherArticleWidget', {'id':article.id})) }}
         </div>
 
     </div>

@@ -1,9 +1,9 @@
 <div class="col-md-3">
     <div class="sidebar-module well">
-        <h4>Other Articles</h4>
+        <h4>Autres Articles</h4>
         <ol class="list-unstyled">
             {% for article in article %}
-                <li><a href="{{ path('show', {'id':article.id}) }}">{{ article.subject }}</a></li>
+                <li><a href="{{ path('article_show', {'id':article.id}) }}">{{ article.subject }}</a></li>
             {% endfor %}
         </ol>
     </div>

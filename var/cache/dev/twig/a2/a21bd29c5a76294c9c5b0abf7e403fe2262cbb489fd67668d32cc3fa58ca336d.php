@@ -1,6 +1,6 @@
 <?php
 
-/* articles/others.html.twig */
+/* :articles:others.html.twig */
 class __TwigTemplate_5d85f2314021c3475e26c25b8487fb24516988348c56407bf5e215b88fab6190 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,16 +15,16 @@ class __TwigTemplate_5d85f2314021c3475e26c25b8487fb24516988348c56407bf5e215b88fa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0fa4160a0ce2e30a52bcb18bc34cb18ff50f5f8abe797cd255ef995c0cddada1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0fa4160a0ce2e30a52bcb18bc34cb18ff50f5f8abe797cd255ef995c0cddada1->enter($__internal_0fa4160a0ce2e30a52bcb18bc34cb18ff50f5f8abe797cd255ef995c0cddada1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "articles/others.html.twig"));
+        $__internal_165b3997dd268ca2c660c3f8c8659f20c7c42a30bb095e58e432422ffd4c3338 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_165b3997dd268ca2c660c3f8c8659f20c7c42a30bb095e58e432422ffd4c3338->enter($__internal_165b3997dd268ca2c660c3f8c8659f20c7c42a30bb095e58e432422ffd4c3338_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:others.html.twig"));
 
-        $__internal_505f23e504c9352436978af8731f82efd8e6bf15857fac50a8d83ce051b8cedf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_505f23e504c9352436978af8731f82efd8e6bf15857fac50a8d83ce051b8cedf->enter($__internal_505f23e504c9352436978af8731f82efd8e6bf15857fac50a8d83ce051b8cedf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "articles/others.html.twig"));
+        $__internal_b81c969cb5a783fe49006635ee02481ba88bbd9f9bf13b40ba2d1844d03c43c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b81c969cb5a783fe49006635ee02481ba88bbd9f9bf13b40ba2d1844d03c43c1->enter($__internal_b81c969cb5a783fe49006635ee02481ba88bbd9f9bf13b40ba2d1844d03c43c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:others.html.twig"));
 
         // line 1
         echo "<div class=\"col-md-3\">
     <div class=\"sidebar-module well\">
-        <h4>Other Articles</h4>
+        <h4>Autres Articles</h4>
         <ol class=\"list-unstyled\">
             ";
         // line 5
@@ -33,7 +33,7 @@ class __TwigTemplate_5d85f2314021c3475e26c25b8487fb24516988348c56407bf5e215b88fa
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
             // line 6
             echo "                <li><a href=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("show", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_show", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "subject", array()), "html", null, true);
             echo "</a></li>
@@ -47,16 +47,16 @@ class __TwigTemplate_5d85f2314021c3475e26c25b8487fb24516988348c56407bf5e215b88fa
     </div>
 </div>";
         
-        $__internal_0fa4160a0ce2e30a52bcb18bc34cb18ff50f5f8abe797cd255ef995c0cddada1->leave($__internal_0fa4160a0ce2e30a52bcb18bc34cb18ff50f5f8abe797cd255ef995c0cddada1_prof);
+        $__internal_165b3997dd268ca2c660c3f8c8659f20c7c42a30bb095e58e432422ffd4c3338->leave($__internal_165b3997dd268ca2c660c3f8c8659f20c7c42a30bb095e58e432422ffd4c3338_prof);
 
         
-        $__internal_505f23e504c9352436978af8731f82efd8e6bf15857fac50a8d83ce051b8cedf->leave($__internal_505f23e504c9352436978af8731f82efd8e6bf15857fac50a8d83ce051b8cedf_prof);
+        $__internal_b81c969cb5a783fe49006635ee02481ba88bbd9f9bf13b40ba2d1844d03c43c1->leave($__internal_b81c969cb5a783fe49006635ee02481ba88bbd9f9bf13b40ba2d1844d03c43c1_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "articles/others.html.twig";
+        return ":articles:others.html.twig";
     }
 
     public function isTraitable()
@@ -81,13 +81,13 @@ class __TwigTemplate_5d85f2314021c3475e26c25b8487fb24516988348c56407bf5e215b88fa
     {
         return new Twig_Source("<div class=\"col-md-3\">
     <div class=\"sidebar-module well\">
-        <h4>Other Articles</h4>
+        <h4>Autres Articles</h4>
         <ol class=\"list-unstyled\">
             {% for article in article %}
-                <li><a href=\"{{ path('show', {'id':article.id}) }}\">{{ article.subject }}</a></li>
+                <li><a href=\"{{ path('article_show', {'id':article.id}) }}\">{{ article.subject }}</a></li>
             {% endfor %}
         </ol>
     </div>
-</div>", "articles/others.html.twig", "/var/www/html/udev_symfony/app/Resources/views/articles/others.html.twig");
+</div>", ":articles:others.html.twig", "/var/www/html/udev_symfony/app/Resources/views/articles/others.html.twig");
     }
 }

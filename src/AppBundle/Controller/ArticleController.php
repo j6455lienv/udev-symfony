@@ -141,9 +141,8 @@ class ArticleController extends Controller
     /**
      * @Route("/articles/others/{id}", name="article_others")
      */
-
     //moyen de recupérer une liste définie de user
-    public function otherUserWidgetAction(Request $request)
+    public function otherArticleWidgetAction(Request $request)
     {
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:Article');
@@ -167,7 +166,7 @@ class ArticleController extends Controller
      */
 
     //moyen de recupérer une liste définie de user
-    public function userWidgetAction(Request $request)
+    public function articleWidgetAction(Request $request)
     {
         $entityManager = $this->getDoctrine()->getManager();
         $repository = $entityManager->getRepository('AppBundle:Article');
@@ -184,7 +183,7 @@ class ArticleController extends Controller
         $article = $query->getResult();
 
         //return, on donne a la vue correspondante les variable twig
-        return $this->render('articles/articlesWidget.html.twig',[
+        return $this->render('articles/articleWidget.html.twig',[
             'article'=>$article
         ]);
     }
