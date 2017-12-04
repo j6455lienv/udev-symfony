@@ -136,10 +136,6 @@ class UserController extends Controller
         return $this->redirectToRoute('users');
     }
 
-    /**
-     * @Route("/users/others/{id}", name="user_others")
-     */
-
     //moyen de recupérer une liste définie de user
     public function otherUserWidgetAction(Request $request)
     {
@@ -159,10 +155,6 @@ class UserController extends Controller
             'user' => $user
         ]);
     }
-
-    /**
-     * @Route("/users/userWidget/{id}", name="user_widget")
-     */
 
     //moyen de recupérer une liste définie de user
     public function userWidgetAction(Request $request)
@@ -186,31 +178,4 @@ class UserController extends Controller
         ]);
     }
 
-    /**
-     * @Route("/rss/file", name="flux_rss")
-     */
-    //moyen de recupérer une liste définie de user
-    public function fluxRSSAction(Request $request)
-    {
-        // create a simple FeedIo instance
-        $feedIo = \FeedIo\Factory::create()->getFeedIo();
-        $url = 'https://forgetformation-recrute.talent-soft.com/handlers/offerRss.ashx?LCID=1036&Rss_Contract=2937';
-        // read a feed
-        $result = $feedIo->read($url);
-
-        // or read a feed since a certain date
-        $result = $feedIo->readSince($url, new \DateTime('-7 days'));
-
-        // get title
-        $feedTitle = $result->getFeed()->getTitle();
-
-        // iterate through items
-        foreach ($result->getFeed() as $item) {
-            echo $item->getTitle();
-        }
-        //return, on donne a la vue correspondante les variable twig
-        return $this->render('rss/file.html.twig', [
-            'result' => $result
-        ]);
-    }
 }

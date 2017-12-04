@@ -3,30 +3,31 @@
 {% block body %}
     {{ include('layout/mainMenu.html.twig', {'current' : 'users'}) }}
 
-    <div class="container" style="display:flex; justify-content: space-around;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1>Show Users</h1>
+                <div>
+                    Id : <span>{{ user.id }}</span>
+                </div>
+                <div>
+                    Username : <span>{{ user.username }}</span>
+                </div>
+                <div>
+                    eMail : <span>{{ user.email }}</span>
+                </div>
+                <div>
+                    Date : <span>{{ user.date|date("Y-m-d") }}</span>
+                </div>
+                <a href="{{ path('edit', {'id' : user.id}) }}" class="btn btn-primary btn-xs">Edit</a>
+                <a href="http://localhost/udev_symfony/web/app_dev.php/users"><input type="button"
+                                                                                     class="btn btn-defaut"
+                                                                                     value="Back"/></a>
+            </div>
 
-        <div id="container">
-            <h1>Show Users</h1>
-            <div>
-                <span>Id : </span><span>{{ user.id }}</span>
+            <div class="col-md-6 col-sm-12">
+                {{ render(controller('AppBundle:User:otherUserWidget', {'id':user.id})) }}
             </div>
-            <div>
-                <span>Username : </span><span>{{ user.username }}</span>
-            </div>
-            <div>
-                <span>eMail : </span><span>{{ user.email }}</span>
-            </div>
-            <div>
-                <span>Date : </span><span>{{ user.date|date("Y-m-d") }}</span>
-            </div>
-            <a href="{{ path('edit', {'id' : user.id}) }}" class="btn btn-primary btn-xs">Edit</a>
-            <a href="http://localhost/udev_symfony/web/app_dev.php/users"><input type="button" class="btn btn-defaut"
-                                                                                 value="Back"/></a>
         </div>
-
-        <div id="container">
-            {{ render(controller('AppBundle:User:otherUserWidget', {'id':user.id})) }}
-        </div>
-
     </div>
 {% endblock %}

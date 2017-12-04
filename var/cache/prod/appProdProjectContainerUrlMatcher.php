@@ -103,21 +103,6 @@ class appProdProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBundle\R
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'delete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::deleteAction',));
             }
 
-            // user_others
-            if (0 === strpos($pathinfo, '/users/others') && preg_match('#^/users/others/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_others')), array (  '_controller' => 'AppBundle\\Controller\\UserController::otherUserWidgetAction',));
-            }
-
-            // user_widget
-            if (0 === strpos($pathinfo, '/users/userWidget') && preg_match('#^/users/userWidget/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_widget')), array (  '_controller' => 'AppBundle\\Controller\\UserController::userWidgetAction',));
-            }
-
-        }
-
-        // flux_rss
-        if ('/rss/file' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\UserController::fluxRSSAction',  '_route' => 'flux_rss',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

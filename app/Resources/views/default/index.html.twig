@@ -3,30 +3,67 @@
     <!-- ajout d'une feuille de style-->
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
     {{ include('layout/mainMenu.html.twig', {'current' : 'homepage'}) }}
-    <h1>Homepage</h1>
+
     <div class="container">
-        <div class="container"><img id="img" src="{{ asset('img/img.jpg') }}"></div>
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Homepage</h1>
+                <h4>Demarrage testing</h4>
+                <p>apres avoir cloné le projet de la branch julienVenet_symfony_final</p>
+                <ul>
+                    <li>Lancer la page depuis son server apache ex: 'localhost/udev_symfony/web/app.php'</li>
+                    <li>Ou lancer le projet en démarrant le server interne symfony. A la racine, lancer une commande symfony php bin/console server:run/start/stop... En localhost le port est le 8000, taper dans l'url 127.0.0.1:8000. Vous arrivez sur homepage.</li>
+                    <li>Créer la db udev suivant le readMe -> Prealable</li>
+                    <li>Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'</li>
+                    <li>Il n'y a pas de relation entre tables</li>
 
-        <div class="alert alert-success" role="alert">
-            <h2>Gestion des utilisateurs</h2>
 
+                </ul>
+            </div>
+            <div class="col-md-4 visible-md col">
+                <img id="img" src="{{ asset('img/symfony.png') }}">
+            </div>
         </div>
-        <div class="alert alert-success" role="alert">
-            <h2>Gestion des articles</h2>
 
-        </div>
-        <div class="well" role="alert">
-            <h2>Utilisateurs créés aujourd'hui</h2>
-            {{ render_hinclude(controller('AppBundle:User:userWidget', {'defaut': 'Loading Other Users'})) }}
 
-        </div>
-        <div class="well" role="alert">
-            <h2>Articles créés aujourd'hui</h2>
-            {{ render_hinclude(controller('AppBundle:Article:articleWidget', {'defaut': 'Loading Other Articles'})) }}
-        </div>
-        <div class="well" role="alert">
-            <h2>Last posts @Symfony Blog</h2>
-            {{ render_hinclude(controller('AppBundle:User:fluxRSS', {'defaut': 'Loading Other Users'})) }}
+        <div class="row">
+            <div class="col-sm-12 col-md-8 left-col">
+                <div class="alert alert-success">
+                    <h2>Gestion des utilisateurs</h2>
+                    <p>Voir la liste des Users : <a href="{{ path('users') }}">List Users</a></p>
+                    <p>Ajouter un User : <a href="{{ path('add') }}">Add Users</a></p>
+                    <p>Je ne peux pas mettre d'autre lien dans cette configuration car je choisis ensuite ma page en
+                        fonction d'un ID que j'envoie dans mon URL.
+                        Ca dépends donc de ma db</p>
+                </div>
+
+                <div class="alert alert-success">
+                    <h2>Gestion des articles</h2>
+                    <p>Voir la liste des Articles : <a href="{{ path('articles') }}">List Articles</a></p>
+                    <p>Ajouter un Article : <a href="{{ path('article_add') }}">Add Article</a></p>
+                    <p>Je ne peux pas mettre d'autre lien dans cette configuration car je choisis ensuite ma page en
+                        fonction d'un ID que j'envoie dans mon URL.
+                        Ca dépends donc de ma db</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <div class="alert alert-info">
+                    <h4>Utilisateurs créés aujourd'hui</h4>
+                    {{ render_hinclude(controller('AppBundle:User:userWidget'), {'default': 'Loading ...'}) }}
+                </div>
+
+                <div class="alert alert-info">
+                    <h4>Articles créés aujourd'hui</h4>
+                    {{ render_hinclude(controller('AppBundle:Article:articleWidget'), {'default': 'Loading ...'}) }}
+                </div>
+
+                <div class="alert alert-info">
+                    <h4>MAJ - Packets ArchLinux</h4>
+                    {{ render_hinclude(controller('AppBundle:Default:feed'), {'default': 'Loading ...'}) }}
+                </div>
+            </div>
+
         </div>
     </div>
 

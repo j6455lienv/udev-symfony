@@ -104,8 +104,8 @@
   ':users:show.html.twig' => __DIR__.'/../../../app/Resources/views/users/show.html.twig',
   ':users:userWidget.html.twig' => __DIR__.'/../../../app/Resources/views/users/userWidget.html.twig',
   ':users:edit.html.twig' => __DIR__.'/../../../app/Resources/views/users/edit.html.twig',
-  ':rss:file.html.twig' => __DIR__.'/../../../app/Resources/views/rss/file.html.twig',
   '::base.html.twig~' => __DIR__.'/../../../app/Resources/views/base.html.twig~',
   '::base.html.twig' => __DIR__.'/../../../app/Resources/views/base.html.twig',
   ':default:index.html.twig' => __DIR__.'/../../../app/Resources/views/default/index.html.twig',
+  ':default:feed.html.twig' => __DIR__.'/../../../app/Resources/views/default/feed.html.twig',
 );

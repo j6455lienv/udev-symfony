@@ -18,4 +18,17 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
+
+    public function feedAction()
+    {
+        $url = "https://www.archlinux.org/feeds/packages/";
+        // create a simple FeedIo instance
+        $feedIo = \FeedIo\Factory::create()->getFeedIo();
+        $result = $feedIo->read($url);
+        $feedTitle = $result->getFeed()->getTitle();
+        return $this->render('default/feed.html.twig',[
+            'feedTitle' => $feedTitle,
+            'feed'=>$result
+        ]);
+    }
 }

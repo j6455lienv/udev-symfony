@@ -1,0 +1,8 @@
+    <div class="sidebar-module well">
+        <h4>{{ feedTitle }}</h4>
+        <ul class="list-unstyled">
+            {% for row in feed.getFeed() %}
+                <li><a href="{{ row.getLink() }}">{{ row.getTitle() }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>

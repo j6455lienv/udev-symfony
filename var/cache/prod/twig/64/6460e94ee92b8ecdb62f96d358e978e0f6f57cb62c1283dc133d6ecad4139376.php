@@ -37,42 +37,91 @@ class __TwigTemplate_946504aee358c9eb226ae55c0e88268c5b9822e8131bb141c1f2dad4665
         // line 5
         echo twig_include($this->env, $context, "layout/mainMenu.html.twig", array("current" => "homepage"));
         echo "
-    <h1>Homepage</h1>
+
     <div class=\"container\">
-        <div class=\"container\"><img id=\"img\" src=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/img.jpg"), "html", null, true);
-        echo "\"></div>
+        <div class=\"row\">
+            <div class=\"col-md-8\">
+                <h1>Homepage</h1>
+                <h4>Demarrage testing</h4>
+                <p>apres avoir cloné le projet de la branch julienVenet_symfony_final</p>
+                <ul>
+                    <li>Lancer la page depuis son server apache ex: 'localhost/udev_symfony/web/app.php'</li>
+                    <li>Ou lancer le projet en démarrant le server interne symfony. A la racine, lancer une commande symfony php bin/console server:run/start/stop... En localhost le port est le 8000, taper dans l'url 127.0.0.1:8000. Vous arrivez sur homepage.</li>
+                    <li>Créer la db udev suivant le readMe -> Prealable</li>
+                    <li>Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'</li>
+                    <li>Il n'y a pas de relation entre tables</li>
 
-        <div class=\"alert alert-success\" role=\"alert\">
-            <h2>Gestion des utilisateurs</h2>
 
+                </ul>
+            </div>
+            <div class=\"col-md-4 visible-md col\">
+                <img id=\"img\" src=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/symfony.png"), "html", null, true);
+        echo "\">
+            </div>
         </div>
-        <div class=\"alert alert-success\" role=\"alert\">
-            <h2>Gestion des articles</h2>
 
-        </div>
-        <div class=\"well\" role=\"alert\">
-            <h2>Utilisateurs créés aujourd'hui</h2>
-            ";
-        // line 20
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:User:userWidget", array("defaut" => "Loading Other Users")));
+
+        <div class=\"row\">
+            <div class=\"col-sm-12 col-md-8 left-col\">
+                <div class=\"alert alert-success\">
+                    <h2>Gestion des utilisateurs</h2>
+                    <p>Voir la liste des Users : <a href=\"";
+        // line 33
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("users");
+        echo "\">List Users</a></p>
+                    <p>Ajouter un User : <a href=\"";
+        // line 34
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("add");
+        echo "\">Add Users</a></p>
+                    <p>Je ne peux pas mettre d'autre lien dans cette configuration car je choisis ensuite ma page en
+                        fonction d'un ID que j'envoie dans mon URL.
+                        Ca dépends donc de ma db</p>
+                </div>
+
+                <div class=\"alert alert-success\">
+                    <h2>Gestion des articles</h2>
+                    <p>Voir la liste des Articles : <a href=\"";
+        // line 42
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("articles");
+        echo "\">List Articles</a></p>
+                    <p>Ajouter un Article : <a href=\"";
+        // line 43
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_add");
+        echo "\">Add Article</a></p>
+                    <p>Je ne peux pas mettre d'autre lien dans cette configuration car je choisis ensuite ma page en
+                        fonction d'un ID que j'envoie dans mon URL.
+                        Ca dépends donc de ma db</p>
+                </div>
+            </div>
+
+            <div class=\"col-sm-12 col-md-4\">
+                <div class=\"alert alert-info\">
+                    <h4>Utilisateurs créés aujourd'hui</h4>
+                    ";
+        // line 53
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:User:userWidget"), array("default" => "Loading ..."));
         echo "
+                </div>
 
-        </div>
-        <div class=\"well\" role=\"alert\">
-            <h2>Articles créés aujourd'hui</h2>
-            ";
-        // line 25
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:Article:articleWidget", array("defaut" => "Loading Other Articles")));
+                <div class=\"alert alert-info\">
+                    <h4>Articles créés aujourd'hui</h4>
+                    ";
+        // line 58
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:Article:articleWidget"), array("default" => "Loading ..."));
         echo "
-        </div>
-        <div class=\"well\" role=\"alert\">
-            <h2>Last posts @Symfony Blog</h2>
-            ";
-        // line 29
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:User:fluxRSS", array("defaut" => "Loading Other Users")));
+                </div>
+
+                <div class=\"alert alert-info\">
+                    <h4>MAJ - Packets ArchLinux</h4>
+                    ";
+        // line 63
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragmentStrategy("hinclude", Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:Default:feed"), array("default" => "Loading ..."));
         echo "
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -91,7 +140,7 @@ class __TwigTemplate_946504aee358c9eb226ae55c0e88268c5b9822e8131bb141c1f2dad4665
 
     public function getDebugInfo()
     {
-        return array (  74 => 29,  67 => 25,  59 => 20,  44 => 8,  38 => 5,  34 => 4,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  120 => 63,  112 => 58,  104 => 53,  91 => 43,  87 => 42,  76 => 34,  72 => 33,  60 => 24,  38 => 5,  34 => 4,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

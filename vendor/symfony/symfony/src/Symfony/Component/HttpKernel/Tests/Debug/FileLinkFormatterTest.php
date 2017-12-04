@@ -22,12 +22,12 @@ class FileLinkFormatterTest extends TestCase
     {
         $sut = new FileLinkFormatter();
 
-        $this->assertFalse($sut->format('/kernel/root/src/my/very/best/file.html.twig', 3));
+        $this->assertFalse($sut->format('/kernel/root/src/my/very/best/feed.html.twig', 3));
     }
 
     public function testWhenFileLinkFormatAndNoRequest()
     {
-        $file = __DIR__.DIRECTORY_SEPARATOR.'file.html.twig';
+        $file = __DIR__.DIRECTORY_SEPARATOR.'feed.html.twig';
 
         $sut = new FileLinkFormatter('debug://open?url=file://%f&line=%l', new RequestStack());
 
@@ -36,7 +36,7 @@ class FileLinkFormatterTest extends TestCase
 
     public function testWhenFileLinkFormatAndRequest()
     {
-        $file = __DIR__.DIRECTORY_SEPARATOR.'file.html.twig';
+        $file = __DIR__.DIRECTORY_SEPARATOR.'feed.html.twig';
         $baseDir = __DIR__;
         $requestStack = new RequestStack();
         $request = new Request();
@@ -49,7 +49,7 @@ class FileLinkFormatterTest extends TestCase
 
     public function testWhenNoFileLinkFormatAndRequest()
     {
-        $file = __DIR__.DIRECTORY_SEPARATOR.'file.html.twig';
+        $file = __DIR__.DIRECTORY_SEPARATOR.'feed.html.twig';
         $requestStack = new RequestStack();
         $request = new Request();
         $requestStack->push($request);
@@ -62,6 +62,6 @@ class FileLinkFormatterTest extends TestCase
 
         $sut = new FileLinkFormatter(null, $requestStack, __DIR__, '/_profiler/open?file=%f&line=%l#line%l');
 
-        $this->assertSame('http://www.example.org/app.php/_profiler/open?file=file.html.twig&line=3#line3', $sut->format($file, 3));
+        $this->assertSame('http://www.example.org/app.php/_profiler/open?file=feed.html.twig&line=3#line3', $sut->format($file, 3));
     }
 }

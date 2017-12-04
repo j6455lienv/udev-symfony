@@ -18,7 +18,11 @@ class __TwigTemplate_4c2e5d09cc9093f1e0e7ea7474c83fee4e6dd266267820c48962b3f4543
         // line 1
         echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 
-    <a class=\"navbar-brand\" href=\"/udev_symfony/web/app_dev.php\">Home</a>
+    <a class=\"navbar-brand\" href=\"";
+        // line 3
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "\">Home</a>
+
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"
             aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -32,8 +36,14 @@ class __TwigTemplate_4c2e5d09cc9093f1e0e7ea7474c83fee4e6dd266267820c48962b3f4543
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"
                    aria-haspopup=\"true\" aria-expanded=\"false\">Users</a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users\">List</a>
-                    <a class=\"dropdown-item\" href=\"/udev_symfony/web/app_dev.php/users/add\">Add</a>
+                    <a class=\"dropdown-item\" href=\"";
+        // line 18
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("users");
+        echo "\">List</a>
+                    <a class=\"dropdown-item\" href=";
+        // line 19
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("add");
+        echo ">Add</a>
                 </div>
             </li>
 
@@ -43,11 +53,11 @@ class __TwigTemplate_4c2e5d09cc9093f1e0e7ea7474c83fee4e6dd266267820c48962b3f4543
                    aria-haspopup=\"true\" aria-expanded=\"false\">Articles</a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                     <a class=\"dropdown-item\" href=\"";
-        // line 27
+        // line 28
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("articles");
         echo "\">List</a>
                     <a class=\"dropdown-item\" href=\"";
-        // line 28
+        // line 29
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_add");
         echo "\">Add</a>
                 </div>
@@ -69,7 +79,7 @@ class __TwigTemplate_4c2e5d09cc9093f1e0e7ea7474c83fee4e6dd266267820c48962b3f4543
 
     public function getDebugInfo()
     {
-        return array (  51 => 28,  47 => 27,  19 => 1,);
+        return array (  61 => 29,  57 => 28,  45 => 19,  41 => 18,  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

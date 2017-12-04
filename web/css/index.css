@@ -1,14 +1,9 @@
-h1{
-    margin: 15px 0 0 100px;
-}
-
-h2{
-    font-size: 20px;
-}
-
 #img{
-    float: right;
-    width: 200px;
-    margin: 15px 100px 0 0;
+    width:120px;
 }
+
+.row{
+    margin-top: 40px;
+}
+
 
