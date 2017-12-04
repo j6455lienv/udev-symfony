@@ -1,3 +1,15 @@
+Demarrage de l'application
+apres avoir cloné le projet de la branch julienVenet_symfony_final
+
+Lancer la page depuis son server apache ex: 'localhost/udev_symfony/web/app.php'
+Ou lancer le projet en démarrant le server interne symfony. A la racine, lancer une commande symfony php bin/console server:run/start/stop... En localhost le port est le 8000, taper dans l'url 127.0.0.1:8000. Vous arrivez sur homepage.
+Créer la db udev suivant le readMe -> Prealable
+Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'
+Il n'y a pas de relation entre tables
+Quand tout est installé, créer des User de maniere aléatoire : php bin/console udev:create-users
+Quand tout est installé, créer des Articles de maniere aléatoire : php bin/console udev:create-articles
+
+
 Symfony Standard Edition
 ========================
 

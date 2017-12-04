@@ -50,8 +50,8 @@ class __TwigTemplate_946504aee358c9eb226ae55c0e88268c5b9822e8131bb141c1f2dad4665
                     <li>Créer la db udev suivant le readMe -> Prealable</li>
                     <li>Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'</li>
                     <li>Il n'y a pas de relation entre tables</li>
-
-
+                    <li>Quand tout est installé, créer des User de maniere aléatoire :  php bin/console udev:create-users</li>
+                    <li>Quand tout est installé, créer des Articles de maniere aléatoire :  php bin/console udev:create-articles</li>
                 </ul>
             </div>
             <div class=\"col-md-4 visible-md col\">

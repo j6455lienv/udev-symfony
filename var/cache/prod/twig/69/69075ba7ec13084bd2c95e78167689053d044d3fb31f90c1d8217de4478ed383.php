@@ -16,7 +16,7 @@ class __TwigTemplate_7cd1d062e0fe6184f90793ca28584b234e245999ad12230148b4e7ef9a3
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"col-md-3\">
+        echo "<div>
     <div class=\"sidebar-module well\">
         <h4>Autres Articles</h4>
         <ol class=\"list-unstyled\">

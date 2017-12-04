@@ -21,87 +21,87 @@ class __TwigTemplate_a4e255278e412e199aec348d00b45db5eab4931fa5c65b966a91d06b920
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1fd6c55588044f189b0d594473fabf7fb3a45add9fb75e2859b07eb24d33fd0a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1fd6c55588044f189b0d594473fabf7fb3a45add9fb75e2859b07eb24d33fd0a->enter($__internal_1fd6c55588044f189b0d594473fabf7fb3a45add9fb75e2859b07eb24d33fd0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:show.html.twig"));
+        $__internal_6db153507dd096578e399902960fd2be7d96db7d417592628427a60669efba7f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6db153507dd096578e399902960fd2be7d96db7d417592628427a60669efba7f->enter($__internal_6db153507dd096578e399902960fd2be7d96db7d417592628427a60669efba7f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:show.html.twig"));
 
-        $__internal_19cf5477a84547fb8e304116beb5446fcd62d57bcd6fdbd0e9a2281e4233ca0f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_19cf5477a84547fb8e304116beb5446fcd62d57bcd6fdbd0e9a2281e4233ca0f->enter($__internal_19cf5477a84547fb8e304116beb5446fcd62d57bcd6fdbd0e9a2281e4233ca0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:show.html.twig"));
+        $__internal_a72d2f38966882d33ad85a69c22a4ad94152aa6557243c584ad4ac5c83438f0a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a72d2f38966882d33ad85a69c22a4ad94152aa6557243c584ad4ac5c83438f0a->enter($__internal_a72d2f38966882d33ad85a69c22a4ad94152aa6557243c584ad4ac5c83438f0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1fd6c55588044f189b0d594473fabf7fb3a45add9fb75e2859b07eb24d33fd0a->leave($__internal_1fd6c55588044f189b0d594473fabf7fb3a45add9fb75e2859b07eb24d33fd0a_prof);
+        $__internal_6db153507dd096578e399902960fd2be7d96db7d417592628427a60669efba7f->leave($__internal_6db153507dd096578e399902960fd2be7d96db7d417592628427a60669efba7f_prof);
 
         
-        $__internal_19cf5477a84547fb8e304116beb5446fcd62d57bcd6fdbd0e9a2281e4233ca0f->leave($__internal_19cf5477a84547fb8e304116beb5446fcd62d57bcd6fdbd0e9a2281e4233ca0f_prof);
+        $__internal_a72d2f38966882d33ad85a69c22a4ad94152aa6557243c584ad4ac5c83438f0a->leave($__internal_a72d2f38966882d33ad85a69c22a4ad94152aa6557243c584ad4ac5c83438f0a_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_b4fd0de9695ae11a8e1499d6ad7bd67c1009718394a6eaa776973e159f661534 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b4fd0de9695ae11a8e1499d6ad7bd67c1009718394a6eaa776973e159f661534->enter($__internal_b4fd0de9695ae11a8e1499d6ad7bd67c1009718394a6eaa776973e159f661534_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6c78fe9282fdd7cc1d7257c8835a26e8333e45fb24729877cad1405339850a73 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6c78fe9282fdd7cc1d7257c8835a26e8333e45fb24729877cad1405339850a73->enter($__internal_6c78fe9282fdd7cc1d7257c8835a26e8333e45fb24729877cad1405339850a73_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_272314436f542948389cefdc1aa79365d4bf0423844d75e6d6d91a53e58ca9c5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_272314436f542948389cefdc1aa79365d4bf0423844d75e6d6d91a53e58ca9c5->enter($__internal_272314436f542948389cefdc1aa79365d4bf0423844d75e6d6d91a53e58ca9c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_44739ca4911d56129a2e02feccacc3e91ffbf73c9242a22d5d9c3f221e2db43c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_44739ca4911d56129a2e02feccacc3e91ffbf73c9242a22d5d9c3f221e2db43c->enter($__internal_44739ca4911d56129a2e02feccacc3e91ffbf73c9242a22d5d9c3f221e2db43c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
         echo twig_include($this->env, $context, "layout/mainMenu.html.twig", array("current" => "articles"));
         echo "
 
-    <div class=\"container\" style=\"display:flex; justify-content: space-around;\">
-
-        <div id=\"container\">
-            <h1>Show Articles</h1>
-            <div>
-                <span>N° : </span><span>";
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-md-6 col-sm-12\">
+                <h1>Show Articles</h1>
+                <div>
+                    <span>N° : </span><span>";
         // line 11
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "id", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Subject : </span><span>";
+                </div>
+                <div>
+                    <span>Subject : </span><span>";
         // line 14
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "subject", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Body : </span><span>";
+                </div>
+                <div>
+                    <span>Body : </span><span>";
         // line 17
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "body", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Date : </span><span>";
+                </div>
+                <div>
+                    <span>Date : </span><span>";
         // line 20
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "date", array()), "Y-m-d"), "html", null, true);
         echo "</span>
-            </div>
-            <a href=\"";
+                </div>
+                <a href=\"";
         // line 22
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_edit", array("id" => $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-primary btn-xs\">Edit</a>
-            <a href=\"";
+                <a href=\"";
         // line 23
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("articles");
-        echo "\"><input type=\"button\" class=\"btn btn-defaut\" value=\"Back\"/></a>
-        </div>
+        echo "\"><input type=\"button\" class=\"btn btn-default\" value=\"Back\"/></a>
+            </div>
 
-        <div id=\"container\">
-            ";
+            <div class=\"col-md-6 col-sm-12\">
+                ";
         // line 27
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:Article:otherArticleWidget", array("id" => $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "id", array()))));
         echo "
+            </div>
         </div>
-
     </div>
 ";
         
-        $__internal_272314436f542948389cefdc1aa79365d4bf0423844d75e6d6d91a53e58ca9c5->leave($__internal_272314436f542948389cefdc1aa79365d4bf0423844d75e6d6d91a53e58ca9c5_prof);
+        $__internal_44739ca4911d56129a2e02feccacc3e91ffbf73c9242a22d5d9c3f221e2db43c->leave($__internal_44739ca4911d56129a2e02feccacc3e91ffbf73c9242a22d5d9c3f221e2db43c_prof);
 
         
-        $__internal_b4fd0de9695ae11a8e1499d6ad7bd67c1009718394a6eaa776973e159f661534->leave($__internal_b4fd0de9695ae11a8e1499d6ad7bd67c1009718394a6eaa776973e159f661534_prof);
+        $__internal_6c78fe9282fdd7cc1d7257c8835a26e8333e45fb24729877cad1405339850a73->leave($__internal_6c78fe9282fdd7cc1d7257c8835a26e8333e45fb24729877cad1405339850a73_prof);
 
     }
 
@@ -135,30 +135,30 @@ class __TwigTemplate_a4e255278e412e199aec348d00b45db5eab4931fa5c65b966a91d06b920
 {% block body %}
     {{ include('layout/mainMenu.html.twig', {'current' : 'articles'}) }}
 
-    <div class=\"container\" style=\"display:flex; justify-content: space-around;\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-md-6 col-sm-12\">
+                <h1>Show Articles</h1>
+                <div>
+                    <span>N° : </span><span>{{ article.id }}</span>
+                </div>
+                <div>
+                    <span>Subject : </span><span>{{ article.subject }}</span>
+                </div>
+                <div>
+                    <span>Body : </span><span>{{ article.body }}</span>
+                </div>
+                <div>
+                    <span>Date : </span><span>{{ article.date|date(\"Y-m-d\") }}</span>
+                </div>
+                <a href=\"{{ path('article_edit', {'id' : article.id}) }}\" class=\"btn btn-primary btn-xs\">Edit</a>
+                <a href=\"{{ path('articles') }}\"><input type=\"button\" class=\"btn btn-default\" value=\"Back\"/></a>
+            </div>
 
-        <div id=\"container\">
-            <h1>Show Articles</h1>
-            <div>
-                <span>N° : </span><span>{{ article.id }}</span>
+            <div class=\"col-md-6 col-sm-12\">
+                {{ render(controller('AppBundle:Article:otherArticleWidget', {'id':article.id})) }}
             </div>
-            <div>
-                <span>Subject : </span><span>{{ article.subject }}</span>
-            </div>
-            <div>
-                <span>Body : </span><span>{{ article.body }}</span>
-            </div>
-            <div>
-                <span>Date : </span><span>{{ article.date|date(\"Y-m-d\") }}</span>
-            </div>
-            <a href=\"{{ path('article_edit', {'id' : article.id}) }}\" class=\"btn btn-primary btn-xs\">Edit</a>
-            <a href=\"{{ path('articles')}}\"><input type=\"button\" class=\"btn btn-defaut\" value=\"Back\"/></a>
         </div>
-
-        <div id=\"container\">
-            {{ render(controller('AppBundle:Article:otherArticleWidget', {'id':article.id})) }}
-        </div>
-
     </div>
 {% endblock %}", ":articles:show.html.twig", "/var/www/html/udev_symfony/app/Resources/views/articles/show.html.twig");
     }

@@ -15,14 +15,14 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d58e304b87c9bf9da26b1dd364df9024f5787f24c812a6704cf0c5450d83eb73 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d58e304b87c9bf9da26b1dd364df9024f5787f24c812a6704cf0c5450d83eb73->enter($__internal_d58e304b87c9bf9da26b1dd364df9024f5787f24c812a6704cf0c5450d83eb73_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
+        $__internal_50a44d8de04de6bef76d84b596a334c705af8c131fd61049146d5ac6a49d8d72 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_50a44d8de04de6bef76d84b596a334c705af8c131fd61049146d5ac6a49d8d72->enter($__internal_50a44d8de04de6bef76d84b596a334c705af8c131fd61049146d5ac6a49d8d72_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
 
-        $__internal_edb3476916aab8397a0ba9a4839d17c74e86b79f93a58d9bfa3471b40813ef7d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_edb3476916aab8397a0ba9a4839d17c74e86b79f93a58d9bfa3471b40813ef7d->enter($__internal_edb3476916aab8397a0ba9a4839d17c74e86b79f93a58d9bfa3471b40813ef7d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
+        $__internal_2faf4c3464a62dd63ccf06ff631832753644a5ca4238d8f46fba34524ebaa416 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2faf4c3464a62dd63ccf06ff631832753644a5ca4238d8f46fba34524ebaa416->enter($__internal_2faf4c3464a62dd63ccf06ff631832753644a5ca4238d8f46fba34524ebaa416_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":users:others.html.twig"));
 
         // line 1
-        echo "<div class=\"col-md-3\">
+        echo "<div>
     <div class=\"sidebar-module well\">
         <h4>Other Users</h4>
         <ol class=\"list-unstyled\">
@@ -47,10 +47,10 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
     </div>
 </div>";
         
-        $__internal_d58e304b87c9bf9da26b1dd364df9024f5787f24c812a6704cf0c5450d83eb73->leave($__internal_d58e304b87c9bf9da26b1dd364df9024f5787f24c812a6704cf0c5450d83eb73_prof);
+        $__internal_50a44d8de04de6bef76d84b596a334c705af8c131fd61049146d5ac6a49d8d72->leave($__internal_50a44d8de04de6bef76d84b596a334c705af8c131fd61049146d5ac6a49d8d72_prof);
 
         
-        $__internal_edb3476916aab8397a0ba9a4839d17c74e86b79f93a58d9bfa3471b40813ef7d->leave($__internal_edb3476916aab8397a0ba9a4839d17c74e86b79f93a58d9bfa3471b40813ef7d_prof);
+        $__internal_2faf4c3464a62dd63ccf06ff631832753644a5ca4238d8f46fba34524ebaa416->leave($__internal_2faf4c3464a62dd63ccf06ff631832753644a5ca4238d8f46fba34524ebaa416_prof);
 
     }
 
@@ -79,7 +79,7 @@ class __TwigTemplate_fc5c1e09eac5c2089820331b04c89d1c8ebe3a3b207e4027b7cba309f82
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"col-md-3\">
+        return new Twig_Source("<div>
     <div class=\"sidebar-module well\">
         <h4>Other Users</h4>
         <ol class=\"list-unstyled\">

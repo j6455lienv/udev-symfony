@@ -15,14 +15,14 @@ class __TwigTemplate_aaa877c4bb7c0ad5d82a6054937c9b45704012cca35b34b96a1ddebc93e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3e969d21755f7c5b591546a5d78e83b211847331b22556a37fe67cc25436deba = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3e969d21755f7c5b591546a5d78e83b211847331b22556a37fe67cc25436deba->enter($__internal_3e969d21755f7c5b591546a5d78e83b211847331b22556a37fe67cc25436deba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:articleWidget.html.twig"));
+        $__internal_eb2b0bb603b0614a7f5fa46bbf187f04a9da9184753b53d924f26685ded59a8b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_eb2b0bb603b0614a7f5fa46bbf187f04a9da9184753b53d924f26685ded59a8b->enter($__internal_eb2b0bb603b0614a7f5fa46bbf187f04a9da9184753b53d924f26685ded59a8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:articleWidget.html.twig"));
 
-        $__internal_6c3179aaae08b4c072b494cae8783603ee8f564534aeb7f9eac46d4d18c34261 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6c3179aaae08b4c072b494cae8783603ee8f564534aeb7f9eac46d4d18c34261->enter($__internal_6c3179aaae08b4c072b494cae8783603ee8f564534aeb7f9eac46d4d18c34261_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:articleWidget.html.twig"));
+        $__internal_d3506624d32f38b2dc793235fdaa3c83c40196baf6d61ce01a28a5857f60a661 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d3506624d32f38b2dc793235fdaa3c83c40196baf6d61ce01a28a5857f60a661->enter($__internal_d3506624d32f38b2dc793235fdaa3c83c40196baf6d61ce01a28a5857f60a661_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":articles:articleWidget.html.twig"));
 
         // line 1
-        echo "<div class=\"col-md-3\">
+        echo "<div>
     <div class=\"sidebar-module well\">
         <ol class=\"list-unstyled\">
             ";
@@ -46,10 +46,10 @@ class __TwigTemplate_aaa877c4bb7c0ad5d82a6054937c9b45704012cca35b34b96a1ddebc93e
     </div>
 </div>";
         
-        $__internal_3e969d21755f7c5b591546a5d78e83b211847331b22556a37fe67cc25436deba->leave($__internal_3e969d21755f7c5b591546a5d78e83b211847331b22556a37fe67cc25436deba_prof);
+        $__internal_eb2b0bb603b0614a7f5fa46bbf187f04a9da9184753b53d924f26685ded59a8b->leave($__internal_eb2b0bb603b0614a7f5fa46bbf187f04a9da9184753b53d924f26685ded59a8b_prof);
 
         
-        $__internal_6c3179aaae08b4c072b494cae8783603ee8f564534aeb7f9eac46d4d18c34261->leave($__internal_6c3179aaae08b4c072b494cae8783603ee8f564534aeb7f9eac46d4d18c34261_prof);
+        $__internal_d3506624d32f38b2dc793235fdaa3c83c40196baf6d61ce01a28a5857f60a661->leave($__internal_d3506624d32f38b2dc793235fdaa3c83c40196baf6d61ce01a28a5857f60a661_prof);
 
     }
 
@@ -78,7 +78,7 @@ class __TwigTemplate_aaa877c4bb7c0ad5d82a6054937c9b45704012cca35b34b96a1ddebc93e
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"col-md-3\">
+        return new Twig_Source("<div>
     <div class=\"sidebar-module well\">
         <ol class=\"list-unstyled\">
             {% for article in article %}

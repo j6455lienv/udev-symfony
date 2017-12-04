@@ -21,29 +21,29 @@ class __TwigTemplate_f9e99689f6afa44809b9e2e6b6be78eb45472fdb864771d4cf14f2b52fb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b3a9803a5e5271b6a063f93297ae2988a7a295338d00f4b6d43232309766f510 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b3a9803a5e5271b6a063f93297ae2988a7a295338d00f4b6d43232309766f510->enter($__internal_b3a9803a5e5271b6a063f93297ae2988a7a295338d00f4b6d43232309766f510_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":default:index.html.twig"));
+        $__internal_f392913eb75bbb8ecad5a551887376b59084053e22a0a36c3571745f57276e40 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f392913eb75bbb8ecad5a551887376b59084053e22a0a36c3571745f57276e40->enter($__internal_f392913eb75bbb8ecad5a551887376b59084053e22a0a36c3571745f57276e40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":default:index.html.twig"));
 
-        $__internal_ed8ec20f36472903ae4a9f189150a72daf5c5530b0714af2ddbe97c548bfdf85 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed8ec20f36472903ae4a9f189150a72daf5c5530b0714af2ddbe97c548bfdf85->enter($__internal_ed8ec20f36472903ae4a9f189150a72daf5c5530b0714af2ddbe97c548bfdf85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":default:index.html.twig"));
+        $__internal_6e1ebd9668f4aacd137bc0bd05b9e69e838b787cefebfdfdd4dd1ee75994e71c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6e1ebd9668f4aacd137bc0bd05b9e69e838b787cefebfdfdd4dd1ee75994e71c->enter($__internal_6e1ebd9668f4aacd137bc0bd05b9e69e838b787cefebfdfdd4dd1ee75994e71c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b3a9803a5e5271b6a063f93297ae2988a7a295338d00f4b6d43232309766f510->leave($__internal_b3a9803a5e5271b6a063f93297ae2988a7a295338d00f4b6d43232309766f510_prof);
+        $__internal_f392913eb75bbb8ecad5a551887376b59084053e22a0a36c3571745f57276e40->leave($__internal_f392913eb75bbb8ecad5a551887376b59084053e22a0a36c3571745f57276e40_prof);
 
         
-        $__internal_ed8ec20f36472903ae4a9f189150a72daf5c5530b0714af2ddbe97c548bfdf85->leave($__internal_ed8ec20f36472903ae4a9f189150a72daf5c5530b0714af2ddbe97c548bfdf85_prof);
+        $__internal_6e1ebd9668f4aacd137bc0bd05b9e69e838b787cefebfdfdd4dd1ee75994e71c->leave($__internal_6e1ebd9668f4aacd137bc0bd05b9e69e838b787cefebfdfdd4dd1ee75994e71c_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_1fdacb6e3860b16b07534b9586d4bfa784ef98adf2455240b4e581b6a0ca72f9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1fdacb6e3860b16b07534b9586d4bfa784ef98adf2455240b4e581b6a0ca72f9->enter($__internal_1fdacb6e3860b16b07534b9586d4bfa784ef98adf2455240b4e581b6a0ca72f9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e1318a7da41f45c8e8dc1faa91e334835f4a38de3f3127de06619be75ec4deeb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e1318a7da41f45c8e8dc1faa91e334835f4a38de3f3127de06619be75ec4deeb->enter($__internal_e1318a7da41f45c8e8dc1faa91e334835f4a38de3f3127de06619be75ec4deeb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_6e814ab3d001d6a1c04c4286eebde7e66f1223eab885a002889629971b48adae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6e814ab3d001d6a1c04c4286eebde7e66f1223eab885a002889629971b48adae->enter($__internal_6e814ab3d001d6a1c04c4286eebde7e66f1223eab885a002889629971b48adae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_eb32a8e6c0541776b38d02e7e1ae7937b08138918ed40905857774d53b5aa5db = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_eb32a8e6c0541776b38d02e7e1ae7937b08138918ed40905857774d53b5aa5db->enter($__internal_eb32a8e6c0541776b38d02e7e1ae7937b08138918ed40905857774d53b5aa5db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <!-- ajout d'une feuille de style-->
@@ -68,8 +68,8 @@ class __TwigTemplate_f9e99689f6afa44809b9e2e6b6be78eb45472fdb864771d4cf14f2b52fb
                     <li>Créer la db udev suivant le readMe -> Prealable</li>
                     <li>Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'</li>
                     <li>Il n'y a pas de relation entre tables</li>
-
-
+                    <li>Quand tout est installé, créer des User de maniere aléatoire :  php bin/console udev:create-users</li>
+                    <li>Quand tout est installé, créer des Articles de maniere aléatoire :  php bin/console udev:create-articles</li>
                 </ul>
             </div>
             <div class=\"col-md-4 visible-md col\">
@@ -145,10 +145,10 @@ class __TwigTemplate_f9e99689f6afa44809b9e2e6b6be78eb45472fdb864771d4cf14f2b52fb
 
 ";
         
-        $__internal_6e814ab3d001d6a1c04c4286eebde7e66f1223eab885a002889629971b48adae->leave($__internal_6e814ab3d001d6a1c04c4286eebde7e66f1223eab885a002889629971b48adae_prof);
+        $__internal_eb32a8e6c0541776b38d02e7e1ae7937b08138918ed40905857774d53b5aa5db->leave($__internal_eb32a8e6c0541776b38d02e7e1ae7937b08138918ed40905857774d53b5aa5db_prof);
 
         
-        $__internal_1fdacb6e3860b16b07534b9586d4bfa784ef98adf2455240b4e581b6a0ca72f9->leave($__internal_1fdacb6e3860b16b07534b9586d4bfa784ef98adf2455240b4e581b6a0ca72f9_prof);
+        $__internal_e1318a7da41f45c8e8dc1faa91e334835f4a38de3f3127de06619be75ec4deeb->leave($__internal_e1318a7da41f45c8e8dc1faa91e334835f4a38de3f3127de06619be75ec4deeb_prof);
 
     }
 
@@ -195,8 +195,8 @@ class __TwigTemplate_f9e99689f6afa44809b9e2e6b6be78eb45472fdb864771d4cf14f2b52fb
                     <li>Créer la db udev suivant le readMe -> Prealable</li>
                     <li>Ce projet symfony est un crud simple sur 2 tables 'User' & 'Article'</li>
                     <li>Il n'y a pas de relation entre tables</li>
-
-
+                    <li>Quand tout est installé, créer des User de maniere aléatoire :  php bin/console udev:create-users</li>
+                    <li>Quand tout est installé, créer des Articles de maniere aléatoire :  php bin/console udev:create-articles</li>
                 </ul>
             </div>
             <div class=\"col-md-4 visible-md col\">

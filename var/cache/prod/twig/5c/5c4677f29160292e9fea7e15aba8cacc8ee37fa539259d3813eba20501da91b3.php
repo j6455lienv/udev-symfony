@@ -32,51 +32,51 @@ class __TwigTemplate_10fb6a26d1bd25ffd15b8f75edcab353663f3f98c496d2e7015c4fa7b8d
         echo twig_include($this->env, $context, "layout/mainMenu.html.twig", array("current" => "articles"));
         echo "
 
-    <div class=\"container\" style=\"display:flex; justify-content: space-around;\">
-
-        <div id=\"container\">
-            <h1>Show Articles</h1>
-            <div>
-                <span>N° : </span><span>";
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-md-6 col-sm-12\">
+                <h1>Show Articles</h1>
+                <div>
+                    <span>N° : </span><span>";
         // line 11
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? null), "id", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Subject : </span><span>";
+                </div>
+                <div>
+                    <span>Subject : </span><span>";
         // line 14
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? null), "subject", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Body : </span><span>";
+                </div>
+                <div>
+                    <span>Body : </span><span>";
         // line 17
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? null), "body", array()), "html", null, true);
         echo "</span>
-            </div>
-            <div>
-                <span>Date : </span><span>";
+                </div>
+                <div>
+                    <span>Date : </span><span>";
         // line 20
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute(($context["article"] ?? null), "date", array()), "Y-m-d"), "html", null, true);
         echo "</span>
-            </div>
-            <a href=\"";
+                </div>
+                <a href=\"";
         // line 22
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_edit", array("id" => $this->getAttribute(($context["article"] ?? null), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-primary btn-xs\">Edit</a>
-            <a href=\"";
+                <a href=\"";
         // line 23
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("articles");
-        echo "\"><input type=\"button\" class=\"btn btn-defaut\" value=\"Back\"/></a>
-        </div>
+        echo "\"><input type=\"button\" class=\"btn btn-default\" value=\"Back\"/></a>
+            </div>
 
-        <div id=\"container\">
-            ";
+            <div class=\"col-md-6 col-sm-12\">
+                ";
         // line 27
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("AppBundle:Article:otherArticleWidget", array("id" => $this->getAttribute(($context["article"] ?? null), "id", array()))));
         echo "
+            </div>
         </div>
-
     </div>
 ";
     }

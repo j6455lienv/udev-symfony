@@ -20,7 +20,7 @@
                     Date : <span>{{ user.date|date("Y-m-d") }}</span>
                 </div>
                 <a href="{{ path('edit', {'id' : user.id}) }}" class="btn btn-primary btn-xs">Edit</a>
-                <a href="http://localhost/udev_symfony/web/app_dev.php/users"><input type="button"
+                <a href="{{ path('users') }}"><input type="button"
                                                                                      class="btn btn-defaut"
                                                                                      value="Back"/></a>
             </div>
