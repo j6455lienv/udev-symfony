@@ -2,107 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9210791-d6a1-4277-a8cb-398c37d84753" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/24/2a/5c2a24" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/26/ff/c5ff26" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7f/32/da327f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a6/b3/8bb3a6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainer.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainerUrlGenerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainerUrlGenerator.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainerUrlMatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/appDevProjectContainerUrlMatcher.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__AppBundleEntityArticle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__AppBundleEntityUser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/1/K/zs28KkiopvdARMRHYlFT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/4/W/fNhKIhj1TKf1UGnI9R0h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/6/B/wqL2AtGA7-OK22BScKSt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/A/A/NGzEyWytgzlrJetpxLSJ" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/D/L/dr+L406lwhnAzWVaU-k0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/F/N/kxtVrRtrlcOl0-i0KDdY" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/G/S/NhmSEat-DfdokUx-cgZs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/H/M/BvI9ut0RJ9zPKMbDID48" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/J/H/huh0xyVL5623QtRh5Tcx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/J/J/d-dZAx2m37C4Fj2PCCLt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/L/B/33iEUgl0hV7iUEqtEcDc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/P/J/BvDCg2+h+YagYWDGcAHu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/P/Q/uOgsK6j7D9HLAA4bx5B1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/Q/2/fztgdkPOFUxpbecs9Bk5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/Q/A/mDuk7rZ6b2ScGwYmh6Pa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/whJcno8xg9/Z/I/mG3JrFjlJBwT9BH4S4eJ" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/07/07ec52fbce4373697c844a7cc7bb8ff5041b6d207c877c4ffbd41d5fbf0b63a1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/13/1387b428899749269c110ae7d295c1618b250e028c2a9f76e421f30be7a1c9c8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/15/152be56f62f1de04d02446bd7b52794f54dc641d788e40f43bf1626eabd2f44a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1a/1a7a3642d2ba12110cc5b7775971cc06f4d3e7a7f0ed5e190bde6ea0a15d2410.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1d/1d086e7f0eb652a0f9e3c2eac1e8da00f501ad96b009c20845372d7154092485.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/23/2360e1c15e279c62a99eda0c1becacb3552cae0b01ae50cfa8effb72130e6279.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/26/265ee7d43e04a7ce7299fc5433bb4c0db99ed5478fb65e8345b4bd706328a47d.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/2e/2e4efdf617977ab31377ea3267da8fd5bb3926701559556146eef2331c92d657.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/46/46762d2aa286c9b912d5a7046557c3b478c0568c08e836b6290be613c482b002.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/47/47bf533fb0446d9577c0e6dfbfa56934165776defaaf1aa31f1776f09d45c238.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/4f/4f7343b98d183a9187e5cb1ba2f7d26df024630feff5efee2a6e02d4529fb7eb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/4f/4fb53dc7ec8b9cee57e66bf6291c290970c2b97ffa6a890beea478005cf23061.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/51/51259a11060c44e13d1196d04101afc7784235d7772dff314f49a83764553fdc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/5d/5dc49e4ad343ab665f85e738c4aa21c2617c7906a82fbbec88fd19b9adcd0906.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/64/64cc3e7af0fcd54df77dd4f3be1808b94139cc08f9cfe3b0e5755ff6194ce232.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/64/64e3866818a58468c8d1a779d6ad778c2e048e5f2f26f55262067f6e6e4b6561.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/67/6722ba77a1f5e8c646f32e1314be487ba568506e4af4e6acef9b322d64944339.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/67/67574854fe488a62ab48fac8045c76275ecff6e56b91c0d2ce7433a4ab8b06fc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6c/6c6689db105450273b5e0f5619c215681e24cb72446d10d457b501cc5f82ec9f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6e/6ee11827ac998595d305f4e784fc225a3a563550da3437e914d6d2ce5c95577e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/72/727e7d68bd43c38d25c58b42adee5a3690e20b2aa067d24d44f98b2d1823e19f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/73/731a711a880feacfd0bd3946437bda0538417aa65816e7ba77e7c33dade6fa5b.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/78/78f22e80734c09cd2d5e3563b89126c29c916c3e17c241436b0b11fb1cbc04c7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/80/80d29ba0ded5bcc5c8812067c49a616df26e705759342f68d85f9b1a92116705.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8b/8beec8dd878b2b75814dfed3e74724a3f06c4c622eaaddd14d4b7db2e6d7d194.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9d/9d062d221a06157e7928676d837637ce9206dc288c41b4f8382e35d3b84e2696.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a5/a5fc76ed6293c453c3b6111ab9b93e34ece032498d0bcbcc51d2cfc8469567b6.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a6/a6cea9a8200a455fefa87b8321199770890ef72495ff4b088b44938dc7d045fb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a7/a79c0312383c744df58f2785f033ee98cb0381832e9f70c8350b184c27b1841f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ab/ab641485188ce5b991e9895f2b7df2d1b29294e7f088320800d46a08984dd981.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b3/b302bfffe6c19157f43408296522733b2bec64d7c75c745275993aa73b03b57f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b5/b5abdbd8441dc0d9dd060f85f1b38df54bcfa04b45230c66d4fe48e0d01268f1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b7/b700ae3e14e9680dabf551eb087ae35e7d651f60d2d2b6d5f2b67cb3c10348e0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ba/ba75b8ac0bb034ad55b03d50aff5437a533fc174d589a5493c16bdf4f717a26e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/bd/bd7a36b34e4c5b9160989132fc951604d7d2e251cd5510ca6e7a3761f0a349e3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/be/be2c88a10a77de870c120f8f4288b04f316f84d1ba0fe775106f8fb5c179cd53.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/cb/cb8422910a83a9aadf71c0c43d04020e1ee4e9a5bfa78138ddac681f2cd8616c.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/d0/d00fe891fd92d273199a5bb18ebb8ff3f28c4991ca974c464bf41b217c6981f4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/dc/dced085ba41deef1dceb76f48343c505c9bceb777ff978ae05620d78aee080ea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/e1/e1015a2e7a1bfd9a0f021d97d72c70c5ac1f64c25dc3000a8d2ed58a56dc42b5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/e8/e8853af7945ffe4197f7ccb4f86378876af0bd35578d5c9d3acd1423f10f1d2c.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fb/fbfdc811d1b3e02b5b56b8c1996c3f4db223e8057a28a6d6956d8d05b9bb168e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fc/fc050c9d81e14915bb20cd3e1f4b17d44c63cb46c4e469449afea4a60bd9fcee.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/6/B/oJ41fhyuE7ZbmOTtxPs2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/7/C/+2gEwweKAj61Dmu31LlA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/7/T/0e-sqhj+bgMl3XYl0JIs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/A/P/xkHWpY1PIANet7wPDBP8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/B/F/19mWUUffc6OFnaDu1pi3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/B/S/VxDPiHFimwfIGemu6LOo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/D/L/jojjcPV3Kuz7CINZYziK" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/G/H/TOEAflwO6S41hylbdyEg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/G/L/kUuD77XokPozfSRi8c4n" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/G/Q/s+fqurRLMGSZa4mq4kXz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/G/U/Ahaa8wjxjZweXUhJ4L-N" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/H/I/iC35imEuh9ZOjN58B+Am" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/J/9/73ZWq7UUjHxbs+taDHxT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/L/O/Lau1AO+J40BNHkh3+OzF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/Q/R/46pvyIKJTZluQXJ6QS0K" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/T/-/cxIQKBQCNrUev1I5nz3j" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/V/Z/7u+flFlxCwaVydGeNofd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/57dJjyBGQy/Z/P/8uYsLixv2pFWhixcnD0U" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/sgmkWqEyyj/P/U/GlIDGJanT1XELiQcow9o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/pools/sgmkWqEyyj/X/I/tGdUyQPGC8aqK2eC64nR" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/sessions/prod/sess_5boc3hhr7f742m1a1l11lvf6u1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ArticleType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ArticleType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev-2017-12-04.log" afterPath="$PROJECT_DIR$/var/logs/dev-2017-12-04.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/prod.log" afterPath="$PROJECT_DIR$/var/logs/prod.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_5boc3hhr7f742m1a1l11lvf6u1" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_5boc3hhr7f742m1a1l11lvf6u1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev-2017-12-05.log" afterPath="$PROJECT_DIR$/var/logs/dev-2017-12-05.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -116,8 +19,8 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
                 <marker date="1512464740533" expanded="true" signature="618:656" ph="SELECT a FRO... AcmeMainBundle" />
@@ -129,8 +32,8 @@
       <file leaf-file-name="UserType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="85" />
               <folding>
                 <element signature="e#34#67#0#PHP" expanded="true" />
               </folding>
@@ -141,9 +44,11 @@
       <file leaf-file-name="ArticleType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ArticleType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+              <folding>
+                <element signature="e#34#74#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <marker date="1512464881277" expanded="true" signature="754:792" ph="SELECT a FRO... AcmeMainBundle" />
               </folding>
@@ -382,12 +287,12 @@
       <workItem from="1512148241606" duration="1238000" />
       <workItem from="1512377834470" duration="14127000" />
       <workItem from="1512397000492" duration="3316000" />
-      <workItem from="1512464187540" duration="957000" />
+      <workItem from="1512464187540" duration="1649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90120000" />
+    <option name="totallyTimeSpent" value="90812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1643" y="0" width="1360" height="741" extended-state="6" />
@@ -741,20 +646,9 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <marker date="1512464881277" expanded="true" signature="754:792" ph="SELECT a FRO... AcmeMainBundle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="45" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-            <marker date="1512464740533" expanded="true" signature="618:656" ph="SELECT a FRO... AcmeMainBundle" />
           </folding>
         </state>
       </provider>
@@ -767,10 +661,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+            <marker date="1512464740533" expanded="true" signature="618:656" ph="SELECT a FRO... AcmeMainBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="85" />
           <folding>
             <element signature="e#34#67#0#PHP" expanded="true" />
           </folding>
@@ -779,9 +684,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ArticleType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#34#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
