@@ -2,6 +2,7 @@
 
 namespace AppBundle\Form;
 
+use Doctrine\DBAL\Types\DateType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -13,7 +14,11 @@ class UserType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('username')->add('email')->add('date')->add('login')->add('password');
+        $builder
+            ->add('username')
+            ->add('email')
+            ->add('login')
+            ->add('password');
     }
     
     /**

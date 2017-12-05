@@ -4,7 +4,6 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\User;
 use AppBundle\Form\UserType;
-use Faker\Provider\DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -43,6 +42,7 @@ class UserController extends Controller
     {
         //creation d'un user et creation du formulaire
         $user = new User();
+        $user->setDate(new \DateTime('now'));
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 

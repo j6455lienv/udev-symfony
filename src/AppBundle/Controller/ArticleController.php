@@ -47,6 +47,7 @@ class ArticleController extends Controller
     {
         //creation d'un article et creation du formulaire
         $article = new Article();
+        $article->setDate(new \DateTime('now'));
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
 
